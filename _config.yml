@@ -7,7 +7,7 @@ title: Shuai Wang, Ph.D.
 email: vanstark88@gmail.com
 description: Personal Website of Shuai Wang, Operations Research/Data Scientist Currently at Kroger.Co 
 
-currentresume: resumes/CV_Shuai_Wang.pdf # DO NOT FORGET TO CHANGE THE TAB LINK AS WELL
+currentresume: resumes/CV_Shuai_WANG.pdf # DO NOT FORGET TO CHANGE THE TAB LINK AS WELL
 
 # baseurl: "" # the subpath of your site, e.g. /blog
 # url: "" # the base hostname & protocol for your site, e.g. http://example.com
@@ -31,4 +31,4 @@ tabnames:
 tablinks:
   - index.html
   - research.html
-  - assets/resumes/CV_Shuai_Wang.pdf
+  - assets/resumes/CV_Shuai_WANG.pdf
