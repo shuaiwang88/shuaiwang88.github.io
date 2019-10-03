@@ -16,7 +16,7 @@ github_username:  shuaiwang88
 
 # Build settings
 markdown: kramdown
-# theme: minima
+theme: minima
 gems:
   - jekyll-feed
 exclude:
@@ -26,9 +26,11 @@ exclude:
 tabnames:
   - About Me
   - Research
+  - Tech
   - CV
 
 tablinks:
   - index.html
   - research.html
-  - assets/resumes/CV_Shuai_WANG.pdf
+  - tech.html  
+  - resumes/CV_Shuai_WANG.pdf

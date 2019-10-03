@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1570130818 "CV_Shuai_WANG.tex" "CV_Shuai_WANG.pdf" "CV_Shuai_WANG" 1570130818
+["pdflatex"] 1570139586 "CV_Shuai_WANG.tex" "CV_Shuai_WANG.pdf" "CV_Shuai_WANG" 1570139586
   "/dev/null" 1570120387 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/usr/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc" 1557554766 2679 32dd8ae231bf4a0752b98f62dc097183 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec-sc.enc" 1557554374 2881 8e2aef9e38084b946e7656b60672fedb ""
@@ -109,11 +109,11 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1557554374 33301 a3134070eacafb10b1f371612ce2650d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1570112884 3100969 b31f1c75760f2ab774ba8560044a1f91 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1570110173 7979416 db5b98e0a9163c3936bab2e9945b1c05 ""
-  "CV_Shuai_WANG.aux" 1570130792 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "CV_Shuai_WANG.out" 1570130792 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "CV_Shuai_WANG.tex" 1570130791 10197 6d0e51152e53f902a475b68f24110003 ""
+  "CV_Shuai_WANG.aux" 1570130818 948 259b9fa5ff464d17610a98441b185102 "pdflatex"
+  "CV_Shuai_WANG.out" 1570130818 302 f840fa54634b7f0fc9408e4d9902c5da "pdflatex"
+  "CV_Shuai_WANG.tex" 1570139569 10203 15803e42e8a17ba9c7fc12ff06f42cb2 ""
   (generated)
   "CV_Shuai_WANG.log"
-  "CV_Shuai_WANG.pdf"
   "CV_Shuai_WANG.aux"
   "CV_Shuai_WANG.out"
+  "CV_Shuai_WANG.pdf"
