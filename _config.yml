@@ -26,13 +26,9 @@ exclude:
 tabnames:
   - About Me
   - Research
-  - Project
-  - Media
   - CV
 
 tablinks:
   - index.html
   - research.html
-  - project.html
-  - media.html
   - assets/resumes/CV_Shuai_Wang.pdf
