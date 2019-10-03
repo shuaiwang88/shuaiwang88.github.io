@@ -1,4 +1,4 @@
- # The tools I use on daily basis:
+## The tools I use on daily basis:
 * Tmux
 * NeoVim
 * Spacemacs
@@ -11,7 +11,7 @@
 They are lightweight yet powerful IDE to write and run code inside neovim
 environment.  
 
-For writing document and GTD I use:
+## For writing document and GTD I use:
 [org-mode](https://www.orgmode.org) in
 [spacemacs](https://github.com/syl20bnr/spacemacs) to manage my life. 
 
