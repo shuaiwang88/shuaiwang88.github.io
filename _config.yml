@@ -1,0 +1,38 @@
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Shuai Wang, Ph.D. 
+email: vanstark88@gmail.com
+description: Personal Website of Shuai Wang, Operations Research/Data Scientist Currently at Kroger.Co 
+
+currentresume: resumes/CV_Shuai_Wang.pdf # DO NOT FORGET TO CHANGE THE TAB LINK AS WELL
+
+# baseurl: "" # the subpath of your site, e.g. /blog
+# url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# twitter_username: jekyllrb
+github_username:  shuaiwang88
+
+# Build settings
+markdown: kramdown
+# theme: minima
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+tabnames:
+  - About Me
+  - Research
+  - Project
+  - Media
+  - CV
+
+tablinks:
+  - index.html
+  - research.html
+  - project.html
+  - media.html
+  - assets/resumes/CV_Shuai_Wang.pdf
