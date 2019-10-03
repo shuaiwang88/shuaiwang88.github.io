@@ -1,4 +1,4 @@
-PWD /home/janice/Google Drive/Personal/shuaiwang88.github.io/sebmart.github.io-master/assets/resumes
+PWD /home/janice/Google Drive/Personal/shuaiwang88.github.io/resumes
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
 INPUT CV_Shuai_WANG.tex
@@ -173,10 +173,11 @@ INPUT CV_Shuai_WANG.out
 INPUT CV_Shuai_WANG.out
 INPUT CV_Shuai_WANG.out
 INPUT CV_Shuai_WANG.out
+OUTPUT CV_Shuai_WANG.pdf
 INPUT ./CV_Shuai_WANG.out
 INPUT ./CV_Shuai_WANG.out
 OUTPUT CV_Shuai_WANG.out
-OUTPUT CV_Shuai_WANG.pdf
+INPUT /usr/share/texmf-dist/fonts/tfm/public/tex-gyre/ec-qplri.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/tex-gyre/ec-qplr.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/tex-gyre/ec-qplb.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/tex-gyre/ec-qplr.tfm
@@ -206,7 +207,6 @@ INPUT /usr/share/texmf-dist/tex/latex/lm/omxlmex.fd
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/lmex10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/tex-gyre/ec-qplb.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/tex-gyre/ec-qplb.tfm
-INPUT /usr/share/texmf-dist/fonts/tfm/public/tex-gyre/ec-qplri.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/tex-gyre/ec-qplr-sc.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/tex-gyre/ec-qplb-sc.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/tex-gyre/ec-qplb.tfm
