@@ -19,7 +19,7 @@ environment.
 ## For math modeling I use:
 [Minizinc](https://github.com/MiniZinc) and [JuMP](https://github.com/JuliaOpt/JuMP.jl) to model
 optimization problem, and [COINOR-CBC](https://github.com/coin-or/Cbc) as
-default solver.
+default open-source solver, Cplex in commercial/academic setting.
 
 
 ## My speak:
