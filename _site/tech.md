@@ -5,7 +5,7 @@
 * zsh
 * window manger: i3wm
 
-## R, Python, and Julia programming I use:
+## For R, Python, and Julia programming I use:
 [Nvim-R](https://github.com/jalvesaq/Nvim-R) for R and
 [vimcmdline](https://github.com/jalvesaq/vimcmdline) for python and julia.
 They are lightweight yet powerful IDE to write and run code inside neovim
