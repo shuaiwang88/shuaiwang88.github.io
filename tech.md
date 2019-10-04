@@ -1,6 +1,3 @@
----
-layout:post
----
 
 ## The tools I use on daily basis:
 * Tmux
