@@ -1,3 +1,7 @@
+---
+layout:common
+---
+
 ## The tools I use on daily basis:
 * Tmux
 * NeoVim
