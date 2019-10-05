@@ -28,3 +28,7 @@ at Cincinnati and R meetup on May 22 2019
 
 2. [Data Mining and Mathematical Models for Optimal Scholarship Allocation for a State University](https://github.com/shuaiwang88/dissertation/blob/master/Seminar_Presentation.pdf)
 at [WSU Engineering seminar](https://josephcslater.github.io/josephcslater/classes/speakers/Wang.html) on Dec 2016.
+
+## My blog:
+1. [Construction Speed in Popular Open Source Math Modeling Tools: minizinc vs
+   pyomo vs JuMP](https://bit.ly/30Np80u) featured in[Julia Computing newsletter](https://juliacomputing.com/blog/2019/10/03/october-newsletter.html)  
