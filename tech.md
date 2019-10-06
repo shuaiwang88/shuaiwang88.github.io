@@ -32,13 +32,13 @@ at [WSU Engineering seminar](https://josephcslater.github.io/josephcslater/class
    pyomo vs JuMP](https://bit.ly/30Np80u) featured in [Julia Computing newsletter](https://juliacomputing.com/blog/2019/10/03/october-newsletter.html).  
 
 
-## The tech like and dislike:
+## The tech I like and dislike:
 ### Like:
 * Julia Language: the only nice-looking language capable in both prototyping and production.
 
-* Minizinc: I once converted a on production optimizaion model with **1200** lines written in R to **28** lines in Minizinc.
+* Minizinc: I once converted a on production optimization model with **1200** lines written in R to **28** lines in Minizinc.
 
 ### Dislike:
 * Sql: I never like this and my brain will stop working when joining more than 2 tables.
 
-* Windows: I do own a lapton running Windows 10 at work, and my wallpaper is logo of windows 95.
+* Windows: I do own a laptop running Windows 10 at work, and my wallpaper is logo of windows 95.
