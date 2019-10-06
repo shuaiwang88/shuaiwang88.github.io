@@ -35,7 +35,7 @@ at [WSU Engineering seminar](https://josephcslater.github.io/josephcslater/class
 ### Like:
 * Julia Language: the only nice-looking language capable in both prototyping and production.
 
-* Minizinc: I once converted a on production optimization model with **1200** lines written in R to **28** lines in Minizinc.
+* Minizinc: I once converted an optimization model in production with **1200** lines written in R to **28** lines in Minizinc.
 
 ### Dislike:
 * Sql: I never like this and my brain will stop working when joining more than 2 tables.
