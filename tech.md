@@ -1,6 +1,6 @@
 ## The open source tools I use on daily basis:
 * Manjaro Distro ([I use Arch btw](https://www.redbubble.com/people/rodebubbel/works/31716594-i-use-arch?p=sticker))
-* NeoVim
+* NeoVim (story [1](https://bit.ly/2MQSAh3)
 * Spacemacs
 * Org-mode
 * zsh
