@@ -7,13 +7,13 @@
 * i3wm
 * Tmux
 
-## R, Python, and Julia programming I use:
+## R, Python, and Julia programming tools:
 [Nvim-R](https://github.com/jalvesaq/Nvim-R) for R and
 [vimcmdline](https://github.com/jalvesaq/vimcmdline) for python and julia.
 They are lightweight yet powerful IDE to write and run code inside neovim
 environment.  
 
-## math modeling:
+## Math modeling tools:
 [Minizinc](https://github.com/MiniZinc) and [JuMP](https://github.com/JuliaOpt/JuMP.jl) to model
 optimization problem, and [COINOR-CBC](https://github.com/coin-or/Cbc) as
 default open-source solver, [Cplex](https://www.ibm.com/analytics/cplex-optimizer) and [Gurobi](https://www.gurobi.com/) in commercial/academic setting.
@@ -26,7 +26,7 @@ at Cincinnati and R meetup on May 22 2019
 2. [Data Mining and Mathematical Models for Optimal Scholarship Allocation for a State University](https://github.com/shuaiwang88/dissertation/blob/master/Seminar_Presentation.pdf)
 at [WSU Engineering seminar](https://josephcslater.github.io/josephcslater/classes/speakers/Wang.html) on Dec 2016.
 
-## blog post:
+## Blog post:
 1. [Construction Speed in Popular Open Source Math Modeling Tools: minizinc vs
    pyomo vs JuMP](https://bit.ly/30Np80u) featured in [Julia Computing newsletter](https://juliacomputing.com/blog/2019/10/03/october-newsletter.html).  
 
