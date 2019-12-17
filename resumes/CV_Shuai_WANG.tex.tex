@@ -1,45 +1,74 @@
+% Created 2019-12-14 Sat 08:23
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{Janice Baratheon}
+\date{\today}
+\title{}
+\hypersetup{
+ pdfauthor={Janice Baratheon},
+ pdftitle={},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 26.3 (Org mode 9.2.6)}, 
+ pdflang={English}}
+\begin{document}
 
-%------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%------------------------------------------------------------------------------
-\documentclass[12pt,letterpaper,roman]{moderncv} % Font sizes: 10, 11, or 12;
-%paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or
-%landscape; font families: sans or roman
+\tableofcontents
 
-\moderncvstyle{banking} % CV theme - options include: 'casual' (default),
-%'classic', 'oldstyle' and 'banking'
-\moderncvcolor{black} % CV color - options include: 'blue' (default), 'orange',
-%'green', 'red', 'purple', 'grey' and 'black'
+\%------------------------------------------------------------------------------
+\%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+\%------------------------------------------------------------------------------
+\documentclass[12pt,letterpaper,roman]{moderncv} \% Font sizes: 10, 11, or 12;
+\%paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or
+\%landscape; font families: sans or roman
 
-\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the
-%template
+\moderncvstyle{banking} \% CV theme - options include: 'casual' (default),
+\%'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black} \% CV color - options include: 'blue' (default), 'orange',
+\%'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} \% Used for inserting dummy 'Lorem ipsum' text into the
+\%template
 \usepackage{verbatim}
-\usepackage[scale=0.745]{geometry} % Reduce document margins
-%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the
-%dates column
-%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment
-%to adjust the width of the space allocated to your name
-%------------------------------------------------------------------------------
-%	NAME AND CONTACT INFORMATION SECTION
-%------------------------------------------------------------------------------
+\usepackage[scale=0.745]{geometry} \% Reduce document margins
+\%\setlength{\hintscolumnwidth}{3cm} \% Uncomment to change the width of the
+\%dates column
+\%\setlength{\makecvtitlenamewidth}{10cm} \% For the 'classic' style, uncomment
+\%to adjust the width of the space allocated to your name
+\%------------------------------------------------------------------------------
+\%	NAME AND CONTACT INFORMATION SECTION
+\%------------------------------------------------------------------------------
 
-\firstname{Shuai} % Your first name
-\familyname{Wang} % Your last name
+\firstname{Shuai} \% Your first name
+\familyname{Wang} \% Your last name
 
 \title{Curriculum Vitae}
 \address{1319 Main St}{Cincinnati, Ohio 45202}
 \mobile{(937) 654 0806}
-% \email{wang.172@wright.edu}
+\% \email{wang.172@wright.edu}
 \email{vanstark88@gmail.com}
 \homepage{shuaiwang88.github.io}
-% The first argument is the url for the clickable %link, the second argument is
-%the url displayed in the template - this allows special characters to be
-%displayed such as the %tilde in this example
-%\extrainfo{additional information}
-%\photo[70pt][0.4pt]{Profile}
-%\quote{"The journey of a thousand miles begins with a single step." - Lao Tzu}
+\% The first argument is the url for the clickable \%link, the second argument is
+\%the url displayed in the template - this allows special characters to be
+\%displayed such as the \%tilde in this example
+\%\extrainfo{additional information}
+\%\photo[70pt][0.4pt]{Profile}
+\%\quote{"The journey of a thousand miles begins with a single step." - Lao Tzu}
 
-%------------------------------------------------------------------------------
+\%------------------------------------------------------------------------------
 
 \begin{document}
 %\setlength{\parskip}{2em}
@@ -84,20 +113,20 @@ Jiaotong University}{Dalian, China}{}{}
 \cventry{2012.9--2017.12} {Graduate Research and Teaching
 Assistant}{\textsc{Wright State University}}{Dayton, OH}{}{
 \begin{itemize}
-\item \textbf{PhD Dissertation: Data Mining Techniques and Mathematical Models
-  for the Optimal Scholarship Allocation Problem for a State University
-}
+\item \textbf{Ph.D Dissertation: Optimal Financial Aid Allocation in
+Enrollment Management For an Open Admission State University}
 \newline
-The research uses classification algorithms to find matriculation and graduation
-rate by varying scholarships. Then the optimization model was developed to
-optimize revenue under budget, fairness constraints. This research has prompted
-the university wide scholarship redesign-the APS calculator, see
-http://www.wright.edu/raider-connect/financial-aid/first-year-scholarships. This
-project has resulted a 11\% (2014), 13.9\% (2015) increase in direct admit
+The research uses classification algorithms to find
+matriculation and graduation rate by varying scholarships. Then the
+optimization model was developed to optimize revenue under budget, fairness constraints.
+This research has prompted the university wide scholarship redesign-the APS
+calculator, see http://www.wright.edu/raider-connect/financial-aid/first-year-scholarships.
+This project has resulted a 11\% (2014), 13.9\% (2015) increase in direct admit
 students, which translates into a 5 to 10 million dollars of revenue increase
 for WSU annually.
-\item \textbf{Teaching Assistant} TA for courses: Introduction of Data Mining
-  and Applications. Introduction of Operations Research Models.
+\item \textbf{Teaching Assistant}
+TA for courses: Introduction of Data Mining and Applications. Introduction of
+Operations Research Models.
 \end{itemize} }
 
 
@@ -109,9 +138,9 @@ for WSU annually.
 \begin{itemize}
 \item \textbf{Promotion Planning Optimization}: An optimization model was
   jointly developed with \textsc{A.T.Kearney}, which combining promotion
-  planning-when and how long to promote and assortment selection-what to
+  planning- when and how long to promote and assortment selection-what to
   promote, to benefit the margin. System is implemented in 2014 and saves about
-  5 \%of purchasing cost annually.
+  5 \%of revenue cost annually.
 %\newline{}
 \item \textbf{Forecast and Optimization for clinics}: An accurate forecast of
   number of patient will not only help the nurse scheduling but also reduce the
@@ -131,37 +160,33 @@ for WSU annually.
   savings as well as reduction in out-of-stock (OOS).
  
 %\newline{}
-\item \textbf{Periodic Vehicle Routing}: Each store has demand that
-  fluctuates within a week in various categories, such as frozen, fresh, and
-  grocery. Determining the frequency of visit to each store for each category is
-  a complex periodic vehicle routing problem. Sophisticated optimization models
-  have been built to determine the time of visits for each stores; these
-  optimized visit frequencies are expected to result in a reduction of 10\%
-  (equivalent to \$150 million) in transportation cost.
+\item \textbf{Periodic Vehicle Routing}: Each Kroger store has demand that
+fluctuates within a week in various categories, such as frozen, fresh, and
+grocery. Determining the frequency of visit to each store for each category is
+a complex periodic vehicle routing problem. Sophisticated optimization models
+have been built to determine the time of visits for each stores;  these
+optimized visit frequencies are expected to result in a reduction of 10\%
+(equivalent to \$150 million) in transportation cost.
 %\newline{}
 \item \textbf{Pharmacy Department Register Simulation}: Each store has a
-different volume in terms of patients visit and service time. The simulation
+different volume in terms of patients visit and service time.The simulation
 model has been created to adjust the number of registers to be installed in
 each store, as a function of service time and customer volume.
 
-\item \textbf{Order-picking Staff Daily Scheduling System Optimization}: The
-  staff scheduling system is built to optimize the number of staff required to
-  picking orders. It saves about than 20 to 30 \% labor cost than the previous
-  implementation.
+\item \textbf{Order-picking Staff Daily Scheduling System Optimizationn}:      The staff scheduling system is built to optimize the number of staff required to picking orders. It saves about than 20  to 30 \% labor cost than the previous implementation. 
 \end{itemize}
     }
 
 \cventry{}{Operations Research / Data Science Consultant 
 }{\textsc{Pro Bono}}{}{}{}{
 \begin{itemize}
-\item \textbf{NYC Dog Care Stores Weekly Staff Scheduling Optimization}: I
-  helped a dog care store with 4 locations to create a weekly staff with various
-  constraints such as: schedule preference, locations preference, demand
-  coverage, and cross-skills satisfaction.
+\item \textbf{NYC Dog Care Stores Weekly Staff Scheduling Optimization}: help a dog care store 
+with 4 locations to create a weekly staff with various constraints such as: staff schedule 
+preference, locations preference, demand coverage, and cross-skills satisfaction. 
 
 
-\item \textbf{Cincinnati Public School Bus Routing and Bell Time Optimization}:
-  I wrote the core routing algorithm using Julia and CBC solver.
+\item \textbf{Cincinnati Public School Bus Routing Optimization}: I wrote the core 
+routing algorithm using Julia and CBC solver.
 \end{itemize}
  
 }
@@ -235,4 +260,4 @@ each store, as a function of service time and customer volume.
 
 }
 \end{document}
-
+\end{document}
