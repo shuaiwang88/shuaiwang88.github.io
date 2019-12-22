@@ -21,7 +21,7 @@ default open-source solver, [Cplex](https://www.ibm.com/analytics/cplex-optimize
 
 ## Speak:
 1. [A Gentle Introduction to Modern Optimization Tools in R](https://github.com/shuaiwang88/intro_optimization_CinDay_R_meetup_May_22_2019/blob/master/Gental_Intro_Optimization_R.pdf)
-at Cincinnati and R meetup on May 22 2019
+at Cincinnati and Dayton R meetup on May 22 2019
 
 2. [Data Mining and Mathematical Models for Optimal Scholarship Allocation for a State University](https://github.com/shuaiwang88/dissertation/blob/master/Seminar_Presentation.pdf)
 at [WSU Engineering seminar](https://josephcslater.github.io/josephcslater/classes/speakers/Wang.html) on Dec 2016.
