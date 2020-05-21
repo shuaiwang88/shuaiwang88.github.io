@@ -51,7 +51,7 @@
 
 \section{Education}
 
-\cventry{2011.9--2017.12}{Ph.D. in Engineering Program, Industrial and Human
+\cventry{2011--2017}{Ph.D. in Engineering Program, Industrial and Human
 System}
 {Wright State University}{Dayton, Ohio}{}{}  
 % Arguments not required can be left empty
@@ -71,7 +71,7 @@ Jiaotong University}{Dalian, China}{}{}
 \section{Computer skills} 
 \cvitem{Language}{\textsc{R}, \textsc{Python}, \textsc{Julia}} %,\textsc{VBA}
 \cvitem{Optimization}{\textsc{AIMMS}, \testsc{Minizinc}, \textsc{JuMP}, \textsc{Cplex}, \textsc{Gurobi}, \textsc{CBC}}
-\cvitem{Data Mining}{\textsc{Datarobot}, \textsc{H2O}, \textsc{scikit-learn}, \textsc{tree-based boosting}} 
+\cvitem{Machine Learning}{\textsc{Datarobot}, \textsc{H2O}, \textsc{scikit-learn}, \textsc{tree-based boosting}} 
 \cvitem{Database}{\textsc{Mysql}, \textsc{MS SQL Server}}
 \cvitem{Visualization}{\textsc{Shiny},\textsc{Tableau}}
 %\cvitem{Simulation}{\textsc{Arena}, \textsc{Sigma}}
@@ -81,38 +81,32 @@ Jiaotong University}{Dalian, China}{}{}
 
 
 \section{Experience}
-\cventry{2012.9--2017.12} {Graduate Research and Teaching
-Assistant}{\textsc{Wright State University}}{Dayton, OH}{}{
+\cventry{2011--2017}{Graduate Research/Teaching Assistant}{\textsc{Wright State}}{Dayton,OH}{}
+{} %
+{
 \begin{itemize}
-\item \textbf{Ph.D Dissertation: Optimal Financial Aid Allocation in
-Enrollment Management For an Open Admission State University}
+\item \textbf{PhD Dissertation: Data mining techniques and mathematical models for the optimal scholarship allocation problem for a state university}
 \newline
 The research uses classification algorithms to find
 matriculation and graduation rate by varying scholarships. Then the
-optimization model was developed to optimize revenue under budget, fairness constraints.
+optimization model was developed to optimize revenue under budget, and fairness constraints.
 This research has prompted the university wide scholarship redesign, the APS
-calculator, see http://www.wright.edu/raider-connect/financial-aid/first-year-scholarships.
+calculator, see http://www.wright.edu/raider-connect/financial-aid/first-year-scholarship.
 This project has resulted a 11\% (2014), 13.9\% (2015) increase in direct admit
 students, which translates into a 5 to 10 million dollars of revenue increase
 for WSU annually.
 \item \textbf{Teaching Assistant}
-TA for courses: Introduction of Data Mining and Applications. Introduction of
+TA for courses: 1. Introduction of Data Mining and Applications. 2. Introduction of
 Operations Research Models.
-\end{itemize} }
-
-
-\cventry{2012.3--Present}{Lead Operations Research / Data Science Consultant 
-}{\textsc{Kroger.Co}}{Cincinnati,OH}{}{Role: make mathematical model, implement 
-core algorithm}{
-% \newline{}
-% \textbf{Key modeler for selected projects}:
+\item \textbf{Research Projects}
 
 \begin{itemize}
-\item \textbf{Promotion Planning Optimization}: An optimization model was
-jointly developed with \textsc{A.T.Kearney} to optimize promotion planning and
-assortment selection to benefit the overall revenue gain. System is
+ 
+
+\item \textbf{Promotion Planning Optimization}: A MILP optimization model was
+jointly developed with \textsc{A.T.Kearney} using AIMMS to build promotion plan and
+assortment selection to maximize the overall revenue gain. System is
 implemented in 2014 and saves about 5 percent of the total purchasing cost annually.
-%\newline{}
 \item \textbf{Forecast and Optimization for clinics}: The problem is
 to accurately forecast the number of patients by type to each clinic.
 Sophisticated forecast models that utilize inputs from time, weather, social
@@ -122,41 +116,52 @@ each type of sickness, and the allocation of medical personnel and their
 shifts. The overall goal is to improve customer service and increase the number
 of clinics from 136 to 500 in three to five years.
 %\newline{}
-\item \textbf{ Local Inventory Transfer}:   The problem is to ship medical drugs from stores with excess to stores with needs so as to: 1) reduce
+\item \textbf{High Value Product Local Inventory Transfer}:  The problem is to ship 
+medical drugs from stores with excess to stores with needs so as to: 1) reduce
 potential obsolesces in inventory; 2) better position drugs to meet customer
 demand; 3) to aggregate the shipment in such that transportation costs are
-reduced. The model is piloted in 121  stores and is expected
-to produce \$30 to \$50 million savings  as well as reduction in
-out-of-stock (OOS).
+reduced. The model is expected
+to produce \$30 to \$50 million savings as well as reduction in
+out-of-stock.
  
-%\newline{}
-\item \textbf{Periodic Vehicle Routing}: Each Kroger store has demand that
-fluctuates within a week in various categories, such as frozen, fresh, and
-grocery. Determining the frequency of visit to each store for each category is
-a complex periodic vehicle routing problem. Sophisticated optimization models
-have been built to determine the time of visits for each stores;  these
-optimized visit frequencies are expected to result in a reduction of 10\%
-(equivalent to \$150 million) in transportation cost.
-%\newline{}
-\item \textbf{Pharmacy Department Register Simulation}: Each store has a
-different volume in terms of patients visit and service time.The simulation
-model has been created to adjust the number of registers to be installed in
-each store, as a function of service time and customer volume.
+\end{itemize} 
 
-\item \textbf{Order-picking Staff Daily Scheduling System Optimizationn}:      The staff scheduling system is built to optimize the number of staff required to picking orders. It saves about than 20  to 30 \% labor cost than the previous implementation. 
 \end{itemize}
-    }
 
-\cventry{}{Operations Research / Data Science Consultant 
-}{\textsc{Pro Bono}}{}{}{}{
+}
+
+
+\bigskip
+\cventry{2017.9--Present}{Data Science Consultant}
+{\textsc{Global Associates} }{Cincinnati,OH}{}{}{
 \begin{itemize}
-\item \textbf{NYC Dog Care Stores Weekly Staff Scheduling Optimization}: help a dog care store 
-with 4 locations to create a weekly staff with various constraints such as: staff schedule 
-preference, locations preference, demand coverage, and cross-skills satisfaction. 
+\item \textbf{Order-picking Staff Daily Scheduling System Optimization}: 
+The staff scheduling system is built to optimize the number of staff required to picking 
+orders at each hour. Time-series based forecasting model was used to predict the orders. 
+The project saves about  20 to 30 \% labor cost than the previous implementation. 
+
+\item \textbf{Inventory Control}:
+1. I build the inventory replenishment routing model based on traveling salesman problem. 
+A novel distance metric was proposed to match the store layout. 
+2. A comprehensive staff activity graph was created to track the personal's activity, idle time. 
+3. Heuristic-based restock strategy was created to alert the restock point based on BOH.
+
+
+\end{itemize}
+}
+
+\bigskip
+
+\cventry{}{Operations Research / Data Science Consultant}
+{\textsc{Pro Bono}}{}{}{}{
+\begin{itemize}
+\item \textbf{NYC Dog Care Stores Weekly Staff Scheduling Optimization}: I helped a dog 
+care store with 4 locations to create a weekly staff scheduling system with various 
+constraints such as: staff schedule preference, locations preference, demand coverage, and cross-skills satisfaction. 
 
 
 \item \textbf{Cincinnati Public School Bus Routing Optimization}: I wrote the core 
-routing algorithm using Julia and CBC solver.
+ algorithm using heuristics, Julia with CBC/Gurobi solver. The result is comparable to the MIT's solution for Boston public school system.
 \end{itemize}
  
 }
