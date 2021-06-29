@@ -4,8 +4,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Shuai Wang, Ph.D. 
-email: vanstark88@gmail.com
-description: Personal Website of Shuai Wang, Operations Research/Data Scientist Currently at Kroger.Co 
+email: vanstark88 at gmail.com
+description: Personal Website of Shuai Wang, Operations Research/Data Scientist Currently at Thomasnet.com 
 
 currentresume: resumes/CV_Shuai_WANG.pdf # DO NOT FORGET TO CHANGE THE TAB LINK AS WELL
 
