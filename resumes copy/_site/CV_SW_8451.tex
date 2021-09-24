@@ -1,4 +1,5 @@
-%-----------------------------------------------------------------------------
+
+%------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %------------------------------------------------------------------------------
 \documentclass[12pt,letterpaper,roman]{moderncv} % Font sizes: 10, 11, or 12;
@@ -31,6 +32,12 @@
 % \email{wang.172@wright.edu}
 \email{vanstark88@gmail.com}
 \homepage{shuaiwang88.github.io}
+% The first argument is the url for the clickable %link, the second argument is
+%the url displayed in the template - this allows special characters to be
+%displayed such as the %tilde in this example
+%\extrainfo{additional information}
+%\photo[70pt][0.4pt]{Profile}
+%\quote{"The journey of a thousand miles begins with a single step." - Lao Tzu}
 
 %------------------------------------------------------------------------------
 
@@ -43,6 +50,7 @@
 %------------------------------------------------------------------------------
 
 \section{Education}
+
 \cventry{2011--2017}{Ph.D. in Engineering Program, Industrial and Human
 System}
 {Wright State University}{Dayton, Ohio}{}{}  
@@ -61,10 +69,10 @@ Jiaotong University}{Dalian, China}{}{}
 %------------------------------------------------------------------------------
 %\section{}
 \section{Computer skills} 
-\cvitem{Language}{\textsc{R}, \textsc{Python}, \textsc{Julia}, \textsc{SQL}}
-\cvitem{Optimization}{\textsc{AIMMS},  \textsc{Pyomo}, \testsc{Minizinc}, \textsc{JuMP}, \textsc{CPLEX}, \textsc{GUROBI}, \textsc{CBC}}
-\cvitem{Machine Learning}{\textsc{Datarobot}, \textsc{H2O}, \textsc{sklearn}} 
-%\cvitem{Database}{\textsc{Mysql}, \textsc{MS SQL Server}}
+\cvitem{Language}{\textsc{R}, \textsc{Python}, \textsc{Julia}} %,\textsc{VBA}
+\cvitem{Optimization}{\textsc{AIMMS}, \testsc{Minizinc}, \textsc{JuMP}, \textsc{Cplex}, \textsc{Gurobi}, \textsc{CBC}}
+\cvitem{Machine Learning}{\textsc{Datarobot}, \textsc{H2O}, \textsc{scikit-learn}, \textsc{tree-based boosting}} 
+\cvitem{Database}{\textsc{Mysql}, \textsc{MS SQL Server}}
 \cvitem{Visualization}{\textsc{Shiny},\textsc{Tableau}}
 %\cvitem{Simulation}{\textsc{Arena}, \textsc{Sigma}}
 %\cvitem{OS}{\textsc{Mac OS}, \textsc{Linux}, \textsc{Windows}}
@@ -73,8 +81,9 @@ Jiaotong University}{Dalian, China}{}{}
 
 
 \section{Experience}
-\cventry{2011--2017} {Graduate Research and Teaching
-Assistant}{\textsc{Wright State University, Academic}}{Dayton, OH}{}{
+\cventry{2011--2017}{Graduate Research/Teaching Assistant}{\textsc{Wright State}}{Dayton,OH}{}
+{} %
+{
 \begin{itemize}
 \item \textbf{PhD Dissertation: Data mining techniques and mathematical models for the optimal scholarship allocation problem for a state university}
 \newline
@@ -82,34 +91,22 @@ The research uses classification algorithms to find
 matriculation and graduation rate by varying scholarships. Then the
 optimization model was developed to optimize revenue under budget, and fairness constraints.
 This research has prompted the university wide scholarship redesign, the APS
-calculator, see \href{http://www.wright.edu/raider-connect/financial-aid/first-year-scholarships}{Website}. 
+calculator, see http://www.wright.edu/raider-connect/financial-aid/first-year-scholarship.
 This project has resulted a 11\% (2014), 13.9\% (2015) increase in direct admit
 students, which translates into a 5 to 10 million dollars of revenue increase
 for WSU annually.
 \item \textbf{Teaching Assistant}
-1. Intro of Data Mining and Applications. 
-2. Intro of Operations Research Models.
-\end{itemize} }
-
-
-\bigskip
-%\bigskip
-
-\cventry{2012--2017}{Senior Operations Research Consultant at 
-Kroger}{\textsc{Wright State University partner with Kroger}}{Cincinnati,OH}{}
-{} %
-{
-%Role: make mathematical model, implement 
-%core algorithm
-% \newline{}
-% \textbf{Key modeler for selected projects}:
+TA for courses: 1. Introduction of Data Mining and Applications. 2. Introduction of
+Operations Research Models.
+\item \textbf{Research Projects}
 
 \begin{itemize}
+ 
+
 \item \textbf{Promotion Planning Optimization}: A MILP optimization model was
-jointly developed with \textsc{A.T. Kearney} using AIMMS to build promotion plan and
+jointly developed with \textsc{A.T.Kearney} using AIMMS to build promotion plan and
 assortment selection to maximize the overall revenue gain. System is
-implemented in 2014 and saves about 3 to 5 percent(2 to 5 billions) of the total purchasing cost annually.
-%\newline{}
+implemented in 2014 and saves about 5 percent of the total purchasing cost annually.
 \item \textbf{Forecast and Optimization for clinics}: The problem is
 to accurately forecast the number of patients by type to each clinic.
 Sophisticated forecast models that utilize inputs from time, weather, social
@@ -123,43 +120,30 @@ of clinics from 136 to 500 in three to five years.
 medical drugs from stores with excess to stores with needs so as to: 1) reduce
 potential obsolesces in inventory; 2) better position drugs to meet customer
 demand; 3) to aggregate the shipment in such that transportation costs are
-reduced. The model is piloted in 121 stores and is expected
+reduced. The model is expected
 to produce \$30 to \$50 million savings as well as reduction in
 out-of-stock.
  
-%\newline{}
-% \item \textbf{Periodic Vehicle Routing}: Each Kroger store has demand that
-% fluctuates within a week in various categories, such as frozen, fresh, and
-% grocery. Determining the frequency of visit to each store for each category is
-% a complex periodic vehicle routing problem. Sophisticated optimization models
-% have been built to determine the time of visits for each stores;  these
-% optimized visit frequencies are expected to result in a reduction of 10\%
-% (equivalent to \$150 million) in transportation cost.
-%\newline{}
-% \item \textbf{Pharmacy Department Register Simulation}: Each store has a
-% different volume in terms of patients visit and service time.The simulation
-% model has been created to adjust the number of registers to be installed in
-% each store, as a function of service time and customer volume.
-
+\end{itemize} 
 
 \end{itemize}
 
 }
 
+
 \bigskip
-\cventry{2017.9--Present}{Lead Data Science Consultant at Kroger and 84.51}
+\cventry{2017.9--Present}{Data Science Consultant}
 {\textsc{Global Associates} }{Cincinnati,OH}{}{}{
 \begin{itemize}
 \item \textbf{Order-picking Staff Daily Scheduling System Optimization}: 
 The staff scheduling system is built to optimize the number of staff required to picking 
 orders at each hour. Time-series based forecasting model was used to predict the orders. 
 The project saves about  20 to 30 \% labor cost than the previous implementation. 
-This is escalated as one of top priority project responding to COVID19 at Kroger.
 
 \item \textbf{Inventory Control}:
 1. I build the inventory replenishment routing model based on traveling salesman problem. 
 A novel distance metric was proposed to match the store layout. 
-2. A comprehensive staff activity graph was created to track the activity, idle time. 
+2. A comprehensive staff activity graph was created to track the personal's activity, idle time. 
 3. Heuristic-based restock strategy was created to alert the restock point based on BOH.
 
 
@@ -177,18 +161,10 @@ constraints such as: staff schedule preference, locations preference, demand cov
 
 
 \item \textbf{Cincinnati Public School Bus Routing Optimization}: I wrote the core 
- algorithm using metaheuristics, Julia with CBC/Gurobi solver.
-  The result is comparable to the MIT's solution for the Boston public school system.
-
-%\item \textbf{Teaching}:
-%    I teach Artificial Intelligence and Machine Learning certificate program at University of Texas, Austin collaborated with GreatLearning.com
+ algorithm using heuristics, Julia with CBC/Gurobi solver. The result is comparable to the MIT's solution for Boston public school system.
 \end{itemize}
-
-
+ 
 }
-
-
-
 
 
 
@@ -216,7 +192,7 @@ constraints such as: staff schedule preference, locations preference, demand cov
 % \textit{College of Engineering and Computer Science,Wright State University} }
 % \cvitem{2011}{Provost Enrollment Scholarship, \textit{Wright State University
 % Provost Office} }
-%\cvitem{2011}{Student International Travel Grant, \textit{Dalian Jiaotong
+%%\cvitem{2011}{Student International Travel Grant, \textit{Dalian Jiaotong
 %University} }
 % \cvitem{Citizenship} {P.R.China. H1B Visa Sponsorship needed}
 %\end{comment}
