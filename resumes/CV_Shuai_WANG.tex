@@ -1,7 +1,7 @@
 %-----------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %------------------------------------------------------------------------------
-\documentclass[12pt,letterpaper,roman]{moderncv} % Font sizes: 10, 11, or 12;
+\documentclass[12pt,a4paper,roman]{moderncv} % Font sizes: 10, 11, or 12;
 %paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or
 %landscape; font families: sans or roman
 
@@ -13,7 +13,7 @@
 \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the
 %template
 \usepackage{verbatim}
-\usepackage[scale=0.745]{geometry} % Reduce document margins
+\usepackage[scale=0.9]{geometry} % Reduce document margins
 %\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the
 %dates column
 %\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment
@@ -26,10 +26,10 @@
 \familyname{Wang} % Your last name
 
 \title{Curriculum Vitae}
-\address{1319 Main St}{Cincinnati, Ohio 45202}
+%\address{1319 Main St}{Cincinnati, Ohio 45202}
 \mobile{(937) 654 0806}
 % \email{wang.172@wright.edu}
-\email{vanstark88@gmail.com}
+\email{vanstark88 at gmail.com}
 \homepage{shuaiwang88.github.io}
 
 %------------------------------------------------------------------------------
@@ -49,8 +49,7 @@ System}
 % Arguments not required can be left empty
 %\cventry{2011--2012}{Master in Engineering and Entrepreneurship
 %Program}{Wright State University}{Dayton, Ohio}{UNFINISHED}{}
-\cventry{2007--2011}{Bachelor of Management, Logistics Management}{Dalian
-Jiaotong University}{Dalian, China}{}{}
+\cventry{2007--2011}{Bachelor of Management, Logistics Management}{Dalian Jiaotong University}{Dalian, China}{}{}
 %\vspace*{3mm} %this will fix vertical spacing for \moderncvstyle{classic}, but
 %create vertical spacing issues for other \moderncvstyle{xyz}.
 
@@ -61,18 +60,99 @@ Jiaotong University}{Dalian, China}{}{}
 %------------------------------------------------------------------------------
 %\section{}
 \section{Computer skills} 
-\cvitem{Language}{\textsc{R}, \textsc{Python}, \textsc{Julia}, \textsc{SQL}}
-\cvitem{Optimization}{\textsc{AIMMS},  \textsc{Pyomo}, \testsc{Minizinc}, \textsc{JuMP}, \textsc{CPLEX}, \textsc{GUROBI}, \textsc{CBC}}
-\cvitem{Machine Learning}{\textsc{Datarobot}, \textsc{H2O}, \textsc{sklearn}} 
-%\cvitem{Database}{\textsc{Mysql}, \textsc{MS SQL Server}}
-\cvitem{Visualization}{\textsc{Shiny},\textsc{Tableau}}
+\cvitem{Language}{Python, R, SQL}
+\cvitem{Optimization}{AIMMS, Pyomo, Minizinc, JuMP, OPL; Cplex, Gurobi, CBC; Heruristic}
+\cvitem{Machine Learning}{AutoML: Datarobot, H2O, pycaret; Time Series: anomaly detection, forecast} 
+\cvitem{Visualization}{Shiny, Looker, Superset, Tableau}
 %\cvitem{Simulation}{\textsc{Arena}, \textsc{Sigma}}
 %\cvitem{OS}{\textsc{Mac OS}, \textsc{Linux}, \textsc{Windows}}
-%\cvitem{Big Data}{\textsc{AWS}, \textsc{Apache Spark},
-%		\textsc{H2O}}
-
+\cvitem{Database}{Redshift, Clickhouse, Snowflake, Postgres}
+\cvitem{Cloud}{AWS Lambda, Sagemaker, Spark, Airflow, API Gateway, EC2}
 
 \section{Experience}
+
+\cventry{2021.4--Current} {Principal Data Scientist}{\textsc{Thomasnet}}{New York, NY/Remote}{}{
+Reporting to head of data and AI. Managing 2 data scientists, 3 data engineers.
+I started several 0 to 1 data initiative at Thomasnet including:
+\begin{itemize}
+\item \textbf{Internal facing:}
+    \begin{enumerate}
+    \item Applying AutoML to predict customer churn and sales using AWS suite.
+    \item Recommending products portfolio to advertisers to maximize ROI using integer programming optimization.
+    \item Building the first in-house data analytic Python library.
+    \item Building machine learning algorithm for website bot detection.
+    \item  Creating data cleaning, normalization python library for all the enterprise data cleaning.
+    \item Introducing new tools like Superset, Datahub, and Amundsen to the enterprise for better data governance and visualization.
+    \end{enumerate}
+\item \textbf{External facing:}
+    \begin{enumerate}
+    \item Creating time series anomaly detection (signals) of sourcing activities for hedge funds.
+    \item Creating sourcing trend and stock price/revenue correlation for hedge funds.
+    \item Working on TMX index to track supply chain status in the USA. TMX is used by researchers from Carnegie Mellon University for Congressional hearing on supply chain, and University of Hong Kong for COVID19 related studies.
+    \item Creating APIs and charts for the Thomasnet's alternative data platform for institutional investors.
+    \end{enumerate}
+\end{itemize}
+ }
+
+
+\bigskip
+\cventry{2017.9--2021.4}{Lead Data Scientist and Operations Research Scientist}
+{\textsc{84.51/Kroger}}{Cincinnati,OH}{}{
+Transferred with Kroger's R\&D team, to Kroger's subsidiary data analytical company 84.51 in February 2018.}
+\begin{itemize}
+\item \textbf{Order Forecast and Picking Staff Daily Scheduling System Optimization}: 
+    The daily staff scheduling system is built to optimize the number of staff required to picking 
+    orders at each hour.
+    Time-series based machine learning model is implemented to predict the orders. 
+    An optimization model using CBC/Cplex solver is created to minimize labor cost. 
+    The project saves about 20 to 30\% labor cost (\$200 to \$300 million) than the previous implementation. 
+    This is escalated as one of top priority project responding to COVID19 at Kroger.
+\item \textbf{In-store Inventory Control and Restock Optimization}:
+The project is to transform the in-store inventory into scientific based management system, to increase productivity.
+1. I build the inventory replenishment routing model, to reduce travel distance heuristics, based on traveling salesman problem. A novel distance metric was proposed to match the store layout. 
+2. A comprehensive staff productivity graph was created to track the scanning activity, idle time, travel time.
+3. Heuristic-based restock strategy was created to alert the restock point based on BOH. 
+\end{itemize}
+}
+
+
+\bigskip
+%\bigskip
+
+\cventry{2012--2017}{Senior Operations Research Consultant at 
+Kroger}{\textsc{Large Scale Optimization Lab from WSU partner with Kroger}}{Cincinnati,OH}{}
+{} 
+{
+%Role: make mathematical model, implement 
+%core algorithm
+% \newline{}
+% \textbf{Key modeler for selected projects}:
+
+\begin{itemize}
+\item \textbf{Promotion Planning Optimization}: A MILP optimization model(Collaborative Category Optimization) was
+jointly developed with \textsc{A.T. Kearney} using AIMMS to build promotion planning and
+assortment selection to maximize the overall revenue gain.
+The system is implemented in 2014 and saves about 3 to 5\%(\$2 to 5 billions) of the total purchasing cost annually.
+%\newline{}
+\item \textbf{Forecast and Optimization for clinics}: The problem is
+to accurately forecast the number of patients by type to each clinic.
+Sophisticated forecast models that utilize inputs from time, weather, social
+media data like Google trend queries are used to predict the number of
+visits. These forecasts serve as input to calculate the inventory necessary for
+each type of sickness, and the allocation of medical personnel and their
+shifts. The overall goal is to improve customer service and increase the number
+of clinics from 136 to 500 in three to five years.
+%\newline{}
+\item \textbf{High Value Product Local Inventory Transfer}:  The problem is to ship 
+medical drugs from stores with excess to stores with needs so as to: 1) reduce
+potential obsolesces in inventory; 2) better position drugs to meet customer
+demand; 3) to aggregate the shipment in such that transportation costs are
+reduced. The model is piloted in 121 stores and is expected
+to produce \$30 to \$50 million savings as well as reduction in
+out-of-stock.
+\end{itemize} }
+ 
+\bigskip
 \cventry{2011--2017} {Graduate Research and Teaching
 Assistant}{\textsc{Wright State University, Academic}}{Dayton, OH}{}{
 \begin{itemize}
@@ -89,44 +169,22 @@ for WSU annually.
 \item \textbf{Teaching Assistant}
 1. Intro of Data Mining and Applications. 
 2. Intro of Operations Research Models.
-\end{itemize} }
+\item \textbf{Advisors:}
+\begin{enumerate}
+\item Xinhui Zhang: Head of supply chain and operations research at Alibaba. Three times INFORMS Franz Edelman Award finalist.
+\item Pratik Parikh: Chair of Dept of Industrial Engineering, University of Louisville
+\item Nan Kong: Purdue University  
+\end{enumerate}
+\end{itemize}
+ }
 
 
-\bigskip
-%\bigskip
+\cventry{2021.9--2022.4} {Adjunct Professor}{\textsc{University of Texas, Austin, Academic}}{Online}{}{
+Teaching Introduction of Artificial Intelligence and Machine Learning at McCombs School of Business.}
 
-\cventry{2012--2017}{Senior Operations Research Consultant at 
-Kroger}{\textsc{Wright State University partner with Kroger}}{Cincinnati,OH}{}
-{} %
-{
-%Role: make mathematical model, implement 
-%core algorithm
-% \newline{}
-% \textbf{Key modeler for selected projects}:
 
-\begin{itemize}
-\item \textbf{Promotion Planning Optimization}: A MILP optimization model was
-jointly developed with \textsc{A.T. Kearney} using AIMMS to build promotion plan and
-assortment selection to maximize the overall revenue gain. System is
-implemented in 2014 and saves about 3 to 5 percent(2 to 5 billions) of the total purchasing cost annually.
-%\newline{}
-\item \textbf{Forecast and Optimization for clinics}: The problem is
-to accurately forecast the number of patients by type to each clinic.
-Sophisticated forecast models that utilize inputs from time, weather, social
-media data like Google trend queries are used to predict the number of
-visits.These forecasts serve as input to calculate the inventory necessary for
-each type of sickness, and the allocation of medical personnel and their
-shifts. The overall goal is to improve customer service and increase the number
-of clinics from 136 to 500 in three to five years.
-%\newline{}
-\item \textbf{High Value Product Local Inventory Transfer}:  The problem is to ship 
-medical drugs from stores with excess to stores with needs so as to: 1) reduce
-potential obsolesces in inventory; 2) better position drugs to meet customer
-demand; 3) to aggregate the shipment in such that transportation costs are
-reduced. The model is piloted in 121 stores and is expected
-to produce \$30 to \$50 million savings as well as reduction in
-out-of-stock.
- 
+
+
 %\newline{}
 % \item \textbf{Periodic Vehicle Routing}: Each Kroger store has demand that
 % fluctuates within a week in various categories, such as frozen, fresh, and
@@ -142,29 +200,9 @@ out-of-stock.
 % each store, as a function of service time and customer volume.
 
 
-\end{itemize}
-
-}
-
-\bigskip
-\cventry{2017.9--Present}{Lead Data Science Consultant at Kroger and 84.51}
-{\textsc{Global Associates} }{Cincinnati,OH}{}{}{
-\begin{itemize}
-\item \textbf{Order-picking Staff Daily Scheduling System Optimization}: 
-The staff scheduling system is built to optimize the number of staff required to picking 
-orders at each hour. Time-series based forecasting model was used to predict the orders. 
-The project saves about  20 to 30 \% labor cost than the previous implementation. 
-This is escalated as one of top priority project responding to COVID19 at Kroger.
-
-\item \textbf{Inventory Control}:
-1. I build the inventory replenishment routing model based on traveling salesman problem. 
-A novel distance metric was proposed to match the store layout. 
-2. A comprehensive staff activity graph was created to track the activity, idle time. 
-3. Heuristic-based restock strategy was created to alert the restock point based on BOH.
-
-
-\end{itemize}
-}
+%\end{itemize}
+%
+%}
 
 \bigskip
 
@@ -176,9 +214,7 @@ care store with 4 locations to create a weekly staff scheduling system with vari
 constraints such as: staff schedule preference, locations preference, demand coverage, and cross-skills satisfaction. 
 
 
-\item \textbf{Cincinnati Public School Bus Routing Optimization}: I wrote the core 
- algorithm using metaheuristics, Julia with CBC/Gurobi solver.
-  The result is comparable to the MIT's solution for the Boston public school system.
+\item \textbf{Cincinnati Public School Bus Routing Optimization}: I wrote the core optimization algorithm using meta-heuristics, Julia with CBC/Gurobi solver. The result is comparable to the MIT's solution for the Boston public school system.
 
 %\item \textbf{Teaching}:
 %    I teach Artificial Intelligence and Machine Learning certificate program at University of Texas, Austin collaborated with GreatLearning.com
@@ -218,7 +254,7 @@ constraints such as: staff schedule preference, locations preference, demand cov
 % Provost Office} }
 %\cvitem{2011}{Student International Travel Grant, \textit{Dalian Jiaotong
 %University} }
-% \cvitem{Citizenship} {P.R.China. H1B Visa Sponsorship needed}
+% \cvitem{Citizenship} {P.R.China. USA permanent resident}
 %\end{comment}
 
 
@@ -228,6 +264,11 @@ constraints such as: staff schedule preference, locations preference, demand cov
 
 
 \comment{
+
+
+
+
+
 \section{Languages}
 
 \cvitemwithcomment{Chinese}{Mother tongue}{}
