@@ -26,7 +26,7 @@
 \familyname{Wang} % Your last name
 
 \title{Curriculum Vitae}
-%\address{1319 Main St}{Cincinnati, Ohio 45202}
+\address{Cincinnati, Ohio 45202}{}
 \mobile{(279)-888-1224}
 % \email{wang.172@wright.edu}
 \email{vanstark88@gmail.com}
@@ -55,7 +55,7 @@ System}
 % Arguments not required can be left empty
 %\cventry{2011--2012}{Master in Engineering and Entrepreneurship
 %Program}{Wright State University}{Dayton, Ohio}{UNFINISHED}{}
-\cventry{2007--2011}{Bachelor of Management, Logistics Management}{Dalian Jiaotong University}{Dalian, China}{}{}
+\cventry{2007--2011}{Bachelor of Management, Supply Chain Management}{Dalian Jiaotong University}{Dalian, China}{}{}
 %\vspace*{3mm} %this will fix vertical spacing for \moderncvstyle{classic}, but
 %create vertical spacing issues for other \moderncvstyle{xyz}.
 
@@ -66,9 +66,9 @@ System}
 %------------------------------------------------------------------------------
 %\section{}
 \section{Computer skills} 
-\cvitem{Language}{Python, R, SQL}
-\cvitem{Optimization}{AIMMS, Pyomo, Minizinc, JuMP, OPL; Cplex, Gurobi, CBC; Heruristic}
+\cvitem{Language}{Python, R, Julia; SQL}
 \cvitem{Machine Learning}{AutoML: Datarobot, H2O, pycaret; Time Series: anomaly detection, forecast} 
+\cvitem{Optimization}{AIMMS, Pyomo, Minizinc, JuMP, OPL; Cplex, Gurobi, CBC; Heuristic}
 \cvitem{Visualization}{Shiny, Looker, Superset, Tableau}
 %\cvitem{Simulation}{\textsc{Arena}, \textsc{Sigma}}
 %\cvitem{OS}{\textsc{Mac OS}, \textsc{Linux}, \textsc{Windows}}
@@ -79,15 +79,13 @@ System}
 
 \cventry{2021.4--Current} {Principal Data Scientist}{\textsc{Thomasnet}}{New York, NY/Remote}{}{
 Reporting to head of data and AI. Managing 2 data scientists, 3 data engineers.
-I started several 0 to 1 data initiative at Thomasnet including:
+I started several 0 to 1 data initiatives at Thomasnet including:
 \begin{itemize}
 \item \textbf{Internal facing:}
     \begin{enumerate}
-    \item Applying AutoML to predict various models like customer churn, bot detection, and sales forcasting.
-    \item Recommending products portfolio to advertisers to maximize ROI using integer programming optimization.
-    \item Conduct A/B testing.
-    \item Building machine learning algorithm for website bot detection.
-    \item  Creating data cleaning, normalization python library for all the enterprise data cleaning.
+    \item Applying AutoML to models like customer churn, bot detection, and sales forecasting.
+    \item Recommending products portfolio to suppliers to maximize ROI using integer programming optimization.
+    \item  Creating data cleaning, extraction, normalization python library for all the enterprise data ingestion pipeline.
     \item Introducing new tools like Superset, Datahub, and Amundsen to the enterprise for better data governance and visualization.
     \end{enumerate}
 \item \textbf{External facing:}
@@ -102,19 +100,19 @@ I started several 0 to 1 data initiative at Thomasnet including:
 
 
 \bigskip
-\cventry{2017.9--2021.4}{Lead Data Scientist and Operations Research Scientist}
-{\textsc{84.51/Kroger}}{Cincinnati, OH}{}{
-Transferred with Kroger's R\&D team, to Kroger's subsidiary data analytical company 84.51 in February 2018.}
+\cventry{2017.9--2021.4}{Lead Operations Research Scientist}
+{\textsc{Kroger/84.51}}{Cincinnati, OH}{}{
+I transferred with Kroger's R\&D team, to Kroger's subsidiary data analytical company 84.51 in February 2018.}
 \begin{itemize}
 \item \textbf{Order Forecast and Picking Staff Daily Scheduling System Optimization}: 
     The daily staff scheduling system is built to optimize the number of staff required to picking 
     orders at each hour.
     Time-series based machine learning model is implemented to predict the orders. 
     An optimization model using CBC/Cplex solver is created to minimize labor cost. 
-    The project saves about 20 to 30\% labor cost (\$200 to \$300 million) than the previous implementation. 
-    This is escalated as one of top priority project responding to COVID19 at Kroger.
+    The project saved about 20 to 30\% labor cost (\$200 to \$300 million) than the previous implementation. 
+    This was escalated as one of top priority project responding to COVID19 at Kroger.
 \item \textbf{In-store Inventory Control and Restock Optimization}:
-The project is to transform the in-store inventory into scientific based management system, to increase productivity.
+The project is to transform the in-store inventory into scientific based management system, to increase productivity:
 1. I build the inventory replenishment routing model, to reduce travel distance heuristics, based on traveling salesman problem. A novel distance metric was proposed to match the store layout. 
 2. A comprehensive staff productivity graph was created to track the scanning activity, idle time, travel time.
 3. Heuristic-based restock strategy was created to alert the restock point based on BOH. 
@@ -125,7 +123,7 @@ The project is to transform the in-store inventory into scientific based managem
 \bigskip
 %\bigskip
 
-\cventry{2012--2017}{Senior Operations Research Consultant at 
+\cventry{2012--2017}{Operations Research Consultant at 
 Kroger}{\textsc{Large Scale Optimization Lab from WSU partner with Kroger}}{Cincinnati, OH}{}
 {} 
 {
@@ -135,12 +133,12 @@ Kroger}{\textsc{Large Scale Optimization Lab from WSU partner with Kroger}}{Cinc
 % \textbf{Key modeler for selected projects}:
 
 \begin{itemize}
-\item \textbf{Promotion Planning Optimization}: A MILP optimization model(Collaborative Category Optimization) was
+\item \textbf{Product Promotion Planning Optimization}: A MILP optimization model(Collaborative Category Optimization) was
 jointly developed with \textsc{A.T. Kearney} using AIMMS to build promotion planning and
 assortment selection to maximize the overall revenue gain.
-The system is implemented in 2014 and saves about 3 to 5\%(\$2 to 5 billions) of the total purchasing cost annually.
+The system is implemented in 2014 and saves about 3 to 5\% (\$2 to 5 billions) of the total purchasing cost annually.
 %\newline{}
-\item \textbf{Forecast and Optimization for clinics}: The problem is
+\item \textbf{Forecast and Optimization for the Little Clinics}: The problem is
 to accurately forecast the number of patients by type to each clinic.
 Sophisticated forecast models that utilize inputs from time, weather, social
 media data like Google trend queries are used to predict the number of
@@ -184,12 +182,9 @@ for WSU annually.
 \end{itemize}
  }
  
-\bigskip
-\cventry{2021.9--2022.4} {Adjunct Professor}{\textsc{University of Texas, Austin, Academic}}{Online}{}{
+%\bigskip
+\cventry{2021.9--2022.4} {Lecturer}{\textsc{University of Texas, Austin, Academic}}{Online}{}{
 Teaching Introduction of Artificial Intelligence and Machine Learning at McCombs School of Business.}
-
-
-
 
 %\newline{}
 % \item \textbf{Periodic Vehicle Routing}: Each Kroger store has demand that
@@ -215,13 +210,10 @@ Teaching Introduction of Artificial Intelligence and Machine Learning at McCombs
 \cventry{}{Operations Research / Data Science Consultant}
 {\textsc{Pro Bono}}{}{}{}{
 \begin{itemize}
+\item \textbf{Cincinnati Public School Bus Routing Optimization}: I wrote the core optimization algorithm using meta-heuristics, Julia with CBC/Gurobi solver. The result is comparable to the MIT's solution for the Boston public school system.
 \item \textbf{NYC Dog Care Stores Weekly Staff Scheduling Optimization}: I helped a dog 
 care store with 4 locations to create a weekly staff scheduling system with various 
 constraints such as: staff schedule preference, locations preference, demand coverage, and cross-skills satisfaction. 
-
-
-\item \textbf{Cincinnati Public School Bus Routing Optimization}: I wrote the core optimization algorithm using meta-heuristics, Julia with CBC/Gurobi solver. The result is comparable to the MIT's solution for the Boston public school system.
-
 %\item \textbf{Teaching}:
 %    I teach Artificial Intelligence and Machine Learning certificate program at University of Texas, Austin collaborated with GreatLearning.com
 \end{itemize}
