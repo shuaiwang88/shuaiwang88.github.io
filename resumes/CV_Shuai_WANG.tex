@@ -1,7 +1,7 @@
 %-----------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %------------------------------------------------------------------------------
-\documentclass[12pt,a4paper,roman]{moderncv} % Font sizes: 10, 11, or 12;
+\documentclass[12pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12;
 %paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or
 %landscape; font families: sans or roman
 
@@ -26,7 +26,7 @@
 \familyname{Wang} % Your last name
 
 \title{Curriculum Vitae}
-\address{Cincinnati, Ohio 45202}{}
+\address{Cincinnati, Ohio 45230}{}
 \mobile{(279)-888-1224}
 % \email{wang.172@wright.edu}
 \email{vanstark88@gmail.com}
@@ -35,14 +35,14 @@
 %------------------------------------------------------------------------------
 
 \begin{document}
-%\setlength{\parskip}{2em}
+\setlength{\parskip}{2em}
 \makecvtitle % Print the CV title
-
+%
 % \begin{center}{
 % \textbf{I build end-to-end data science and operations research project.}
 %    } 
 % \end{center}
-%
+
 
 %------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -67,19 +67,22 @@ System}
 %\section{}
 \section{Computer skills} 
 \cvitem{Language}{Python, R, Julia; SQL}
-\cvitem{Machine Learning}{AutoML: Datarobot, H2O, pycaret; Time Series: anomaly detection, forecast} 
-\cvitem{Optimization}{AIMMS, Pyomo, Minizinc, JuMP, OPL; Cplex, Gurobi, CBC, LocalSolver; Heuristic}
-\cvitem{Visualization}{Shiny, Looker, Superset, Tableau}
-%\cvitem{Simulation}{\textsc{Arena}, \textsc{Sigma}}
-%\cvitem{OS}{\textsc{Mac OS}, \textsc{Linux}, \textsc{Windows}}
+\cvitem{Machine Learning}{regression, classification, clustering; xgboost, lightgbm, adaboost, random forest, etc} 
+\cvitem{Time Series}{anomaly detection; forecasting: ARIMA, Prophet}
+\cvitem{AutoML}{Datarobot, H2O, pycaret, caret}
+\cvitem{Optimization}{AIMMS, Pyomo, Minizinc, JuMP, OPL; Cplex, Gurobi, CBC, LocalSolver; }
+\cvitem{Heuristic}{Simulated Annealing, Genetic Algorithm, Tabu Search, Golden Section Search, etc.}
+\cvitem{Discrete Event Simulation}{Arena, Sigma}
 \cvitem{Database}{Snowflake, Redshift, Clickhouse, Postgres, MySql; dbt}
 \cvitem{Cloud}{AWS Lambda, Sagemaker, Spark, Airflow, API Gateway, EC2}
+\cvitem{Visualization}{Shiny, Looker, Superset, Tableau}
+
 
 \section{Experience}
-
+ 
 \cventry{2021.4--Current} {Principal Data Scientist}{\textsc{Thomasnet}}{New York, NY/Remote}{}{
 Reporting to head of data and AI. Managing 2 data scientists, 3 data engineers.
-I started several 0 to 1 data initiatives at Thomasnet including:
+I started several 0 to 1 data initiatives at Thomasnet including:}
 \begin{itemize}
 \item \textbf{Internal facing:}
     \begin{enumerate}
@@ -96,7 +99,17 @@ I started several 0 to 1 data initiatives at Thomasnet including:
     \item Creating APIs and charts for the Thomasnet's alternative data platform for institutional investors.
     \end{enumerate}
 \end{itemize}
- }
+ \bigskip
+
+ 
+\cventry{2022.11.9--Current} {Founder}
+{\textsc{AutoEncoder LLC}}{Cincinnati, OH}{}{}
+My own consulting practice. So far, the clients include: 
+\begin{itemize}
+    \item McKinsey \& Company: Pricing and promotion planning for retail.
+    \item SightLine: College enrollment analysis. 
+\end{itemize}
+
 
 
 \bigskip
@@ -116,8 +129,10 @@ The project is to transform the in-store inventory into scientific based managem
 1. I build the inventory replenishment routing model, to reduce travel distance, using heuristics based on traveling salesman problem. A novel distance metric was proposed to match different store layouts. 
 2. A comprehensive staff productivity graph was created to track the scanning activity, idle time, travel time.
 3. Heuristic-based restock strategy was created to alert the restock point based on BOH. 
+
+
 \end{itemize}
-}
+
 
 
 \bigskip
@@ -126,19 +141,19 @@ The project is to transform the in-store inventory into scientific based managem
 \cventry{2012--2017}{Operations Research Consultant at 
 Kroger}{\textsc{Large Scale Optimization Lab from WSU partner with Kroger}}{Cincinnati, OH}{}
 {} 
-{
+{}
 %Role: make mathematical model, implement 
 %core algorithm
 % \newline{}
 % \textbf{Key modeler for selected projects}:
 
 \begin{itemize}
-\item \textbf{Product Promotion Planning Optimization}: A MILP optimization model(Collaborative Category Optimization) was
+\item \textbf{Product Promotion Planning and Assortment Optimization:} A MILP optimization model (Collaborative Category Optimization) was
 jointly developed with \textsc{A.T. Kearney} using AIMMS to build promotion planning and
 assortment selection to maximize the overall revenue gain.
 The system is implemented in 2014 and saves about 3 to 5\% (\$2 to 5 billions) of the total purchasing cost annually.
 %\newline{}
-\item \textbf{Forecast and Optimization for the Little Clinics}: The problem is
+\item \textbf{Forecast and Optimization for the Little Clinics and Nurse Scheduling}: The problem is
 to accurately forecast the number of patients by type to each clinic.
 Sophisticated forecast models that utilize inputs from time, weather, social
 media data like Google trend queries are used to predict the number of
@@ -147,21 +162,38 @@ each type of sickness, and the allocation of medical personnel and their
 shifts. The overall goal is to improve customer service and increase the number
 of clinics from 136 to 500 in three to five years.
 %\newline{}
-\item \textbf{High Value Product Local Inventory Transfer}:  The problem is to ship 
+\item \textbf{High Value Pharmacy Product Local Inventory Transfer}:  The problem is to ship 
 medical drugs from stores with excess to stores with needs so as to: 1) reduce
 potential obsolesces in inventory; 2) better position drugs to meet customer
 demand; 3) to aggregate the shipment in such that transportation costs are
 reduced. The model is piloted in 121 stores and is expected
 to produce \$30 to \$50 million savings as well as reduction in
 out-of-stock.
-\end{itemize} }
+
+ \item \textbf{Periodic Vehicle Routing}: Each Kroger store has demand that
+ fluctuates within a week in various categories, such as frozen, fresh, and
+ grocery. Determining the frequency of visit to each store for each category is
+ a complex periodic vehicle routing problem. Sophisticated optimization models
+ have been built to determine the time of visits for each stores;  these
+ optimized visit frequencies are expected to result in a reduction of 10\%
+ (equivalent to \$150 million) in transportation cost.
+ \item \textbf{Pharmacy Department Register Simulation}: Each store has a
+ different volume in terms of patients visit and service time. The simulation
+ model, based on queueing theory, was created to adjust the number of registers to be installed in
+ each store, as a function of service time and customer volume.
+
+
+\item \textbf{Call Center Staff Scheduling}:
+I developed a call center staff scheduling model using genetic algorithm, to minimize under-coverage rate.
+\end{itemize} 
  
 \bigskip
+
 \cventry{2011--2017} {Graduate Research and Teaching
-Assistant}{\textsc{Wright State University, Academic}}{Dayton, OH}{}{
+Assistant}{\textsc{Wright State University, Academic}}{Dayton, OH}{}
+{}
 \begin{itemize}
-\item \textbf{PhD Dissertation: Data mining techniques and mathematical models for the optimal scholarship allocation problem for a state university}
-\newline
+\item \textbf{PhD Dissertation: Data mining techniques and mathematical models for the optimal scholarship allocation problem for a state university.}
 The research uses classification algorithms to find
 matriculation and graduation rate by varying scholarships. Then the
 optimization model was developed to optimize revenue under budget, and fairness constraints.
@@ -173,38 +205,16 @@ for WSU annually.
 \item \textbf{Teaching Assistant}
 1. Intro of Data Mining and Applications. 
 2. Intro of Operations Research Models.
-\item \textbf{Advisors:}
-\begin{enumerate}
-\item Xinhui Zhang: Head of supply chain and operations research at Alibaba. Three times INFORMS Franz Edelman Award finalist.
-\item Pratik Parikh: Chair of Dept of Industrial Engineering, University of Louisville
-\item Nan Kong: Purdue University  
+\item \textbf{Dissertation Committee:}
+    \begin{enumerate}
+\item Xinhui Zhang(Main Advisor): Head of supply chain and operations research at Alibaba. Three times INFORMS Franz Edelman Award finalist.
+\item Pratik Parikh: Chair of Dept of Industrial Engineering, University of Louisville.
+\item Nan Kong: Purdue University. 
+\item Caroline Cao: University of South Australia/IMT Atlantique.
+\item Subhashini Ganapathy: Chair of Biomedical, Industrial \& Human Factors Engineering, Wright State University.
 \end{enumerate}
-\end{itemize}
- }
+ \end{itemize}
  
-%\bigskip
-\cventry{2021.9--2022.4} {Lecturer}{\textsc{University of Texas, Austin, Academic}}{Online}{}{
-Teaching Introduction of Artificial Intelligence and Machine Learning at McCombs School of Business.}
-
-%\newline{}
-% \item \textbf{Periodic Vehicle Routing}: Each Kroger store has demand that
-% fluctuates within a week in various categories, such as frozen, fresh, and
-% grocery. Determining the frequency of visit to each store for each category is
-% a complex periodic vehicle routing problem. Sophisticated optimization models
-% have been built to determine the time of visits for each stores;  these
-% optimized visit frequencies are expected to result in a reduction of 10\%
-% (equivalent to \$150 million) in transportation cost.
-%\newline{}
-% \item \textbf{Pharmacy Department Register Simulation}: Each store has a
-% different volume in terms of patients visit and service time.The simulation
-% model has been created to adjust the number of registers to be installed in
-% each store, as a function of service time and customer volume.
-
-
-%\end{itemize}
-%
-%}
-
 \bigskip
 
 \cventry{}{Operations Research / Data Science Consultant}
@@ -212,10 +222,10 @@ Teaching Introduction of Artificial Intelligence and Machine Learning at McCombs
 \begin{itemize}
 \item \textbf{Cincinnati Public School Bus Routing Optimization}: I wrote the core optimization algorithm using meta-heuristics, Julia with CBC/Gurobi solver. The result is comparable to the MIT's solution for the Boston public school system.
 \item \textbf{NYC Dog Care Stores Weekly Staff Scheduling Optimization}: I helped a dog 
-care store with 4 locations to create a weekly staff scheduling system with various 
+care store with 5 locations to create a weekly staff scheduling system with various 
 constraints such as: staff schedule preference, locations preference, demand coverage, and cross-skills satisfaction. 
-%\item \textbf{Teaching}:
-%    I teach Artificial Intelligence and Machine Learning certificate program at University of Texas, Austin collaborated with GreatLearning.com
+\item \textbf{Teaching}:
+    I taught Artificial Intelligence and Machine Learning certificate program at University of Texas, Austin, collaborated with GreatLearning.com. 2020-09 to 2021-03. Rating: 4.8/5.
 \end{itemize}
 
 
