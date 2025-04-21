@@ -26,9 +26,8 @@
 \familyname{Wang} % Your last name
 
 \title{Curriculum Vitae}
-\address{Cincinnati, Ohio 45230}{}
+\address{Cincinnati, Ohio 45242}{}
 \mobile{(937)-654-0806}
-% \email{wang.172@wright.edu}
 \email{vanstark88 at gmail.com}
 \homepage{shuaiwang88.github.io}
 
@@ -67,26 +66,33 @@ System}
 %\section{}
 \section{Computer Skills} 
 \cvitem{Language}{Python, R, Julia; SQL}
-\cvitem{Machine Learning}{regression, classification, clustering; xgboost, lightgbm, adaboost, random forest, etc} 
-\cvitem{AutoML}{Datarobot, H2O, Knime; Pycaret, GlutonTS}
+%\cvitem{Machine Learning}{regression, classification, clustering; xgboost, lightgbm, etc} 
+\cvitem{AutoML}{Datarobot, H2O; Pycaret, GlutonTS}
 \cvitem{Optimization Modeling}{AIMMS, Pyomo, Minizinc, JuMP, OPL; Cplex, Gurobi, CBC, HiGHS }
-\cvitem{Heuristic}{Simulated Annealing, Genetic Algorithm, Tabu Search, Golden Section Search, etc.}
-\cvitem{Time Series}{Anomaly detection: KATS; Forecasting: ARIMA, Prophet, RNN}
-\cvitem{Discrete Event Simulation}{Arena, AnyLogic, Sigma}
-\cvitem{Database}{Snowflake, Redshift, Clickhouse, Postgres, MySql; dbt}
-\cvitem{Cloud}{AWS Lambda, Sagemaker, Snowpark, Spark, Airflow, API Gateway, EC2}
+\cvitem{GenAI}{Snowflake Cortex, GPRO, PRO, LangChain }
+%\cvitem{Heuristic}{Simulated Annealing, Genetic Algorithm, Tabu Search, Golden Section Search, etc.}
+%\cvitem{Time Series}{Anomaly detection, Forecasting, Correlation}
+%\cvitem{Discrete Event Simulation}{Arena, AnyLogic, Sigma}
+\cvitem{Database}{Snowflake, Redshift, Clickhouse, Postgres, MySql, dbt}
+%\cvitem{Cloud}{AWS Lambda, Sagemaker, Snowpark, Spark, Airflow, API Gateway, EC2}
 \cvitem{Visualization}{Shiny, Looker, Superset, Tableau, Streamlit, Dash}
 
 
 \section{Experience}
 \cventry{2023.6--Current} {Senior Data Scientist, Full time}{\textsc{Pacific Life Insurance}}{Newport Beach, CA}{}{}
-Leading data science projects in the areas of math optimization, forecasting; operations, customer service, call center. Mentoring junior data scientists.
+
+Creating roadmap and profolio for data science projects on operation area. 
+
+Leading data science projects in the tech areas of math optimization, forecasting, and function areas in operations, customer service, call center, and marketing.
+
 \begin{itemize}
-\item Developing various time series forecasting, by using AutoML, for processing task volume for annuity and life products.
-\item Creating a MILP based skill-based routing task assignment system, by using HiGHS solver via Pyomo, to optimize tasks dispatching by considering specialist competence, task priority, time constraints, etc.
-\item Leading the data science development for the Medallia VOC(Voice of Customer) for call center in the areas of topics, sentimental, trend.
-\item Implementing virtual queue, call back policy to call center.
-\item Re-creating mortality table(life table) using math optimization. 
+\item Developed various time series forecasting using AutoML, for processing task volume for annuity and life products.
+
+\item Created a MILP based skill-based routing task assignment system, by using HiGHS solver via Pyomo, to optimize tasks dispatching by considering specialist competence, task priority, time constraints, etc. Productivity improved 10 to 20 percent across business functions. 
+%\item Leading the data science development for the Medallia VOC(Voice of Customer) for call center in the areas of topics, sentimental, trend.
+\item Created a GenAI tool for customer service and operation by using customer voice data. Implemented using Snowflake's cortex LLM suit. 
+\item Implemented virtual queue, call back policy to call center.
+\item Re-created mortality table(life table) using math optimization. 
 
 \end{itemize}
 
@@ -94,12 +100,13 @@ Leading data science projects in the areas of math optimization, forecasting; op
 \bigskip
  
 \cventry{2021.4--2023.5} {Principal Data Scientist, Full time}{\textsc{Thomasnet}}{New York, NY}{}{
-Reporting to head of data and AI. I started several 0 to 1 data initiatives at Thomasnet including:}
+Reporting to head of data and AI. Creating roadmaps for data science projects. 
+I started several 0 to 1 data initiatives at Thomasnet including:}
 \begin{itemize}
 \item \textbf{Internal facing:}
     \begin{enumerate}
-    \item Applying AutoML to models like customer churn, bot detection, and sales forecasting.
-    \item Recommending products portfolio to suppliers to maximize ROI using integer programming optimization.
+    \item Applied AutoML to models like customer churn, bot detection, and sales forecasting.
+    \item Recommending products portfolio/ad placement to customers(suppliers) to maximize ROI like views  and inquiries,  using integer programming optimization.
     \item  Creating data cleaning, extraction, normalization python library for all the enterprise data ingestion pipeline.
     \item Introducing new tools like Superset, Datahub, and Amundsen to the enterprise for better data governance and visualization.
     \end{enumerate}
@@ -126,7 +133,7 @@ Reporting to head of data and AI. I started several 0 to 1 data initiatives at T
 
 
 \bigskip
-\cventry{2017.9--2021.4}{Lead Operations Research Scientist, Contract}
+\cventry{2017.9--2021.4}{Lead Operations Research Scientist, Contract through Global Associates}
 {\textsc{Kroger/84.51}}{Cincinnati, OH}{}{
 I transferred with Kroger's R\&D team, to Kroger's subsidiary data analytical company 84.51 in February 2018.}
 \begin{itemize}
@@ -138,7 +145,7 @@ I transferred with Kroger's R\&D team, to Kroger's subsidiary data analytical co
     The project saved about 20\% to 30\% labor cost (\$200 to \$300 million) than the previous implementation. 
     This project was escalated as one of top priority projects responding to COVID-19 at Kroger.
 \item \textbf{In-store Inventory Control and Restock Optimization}:
-The project is to transform the in-store inventory into scientific based management system, to increase productivity:
+The project is to transform the in-store inventory into science-based management system, to increase productivity:
 1. I build the inventory replenishment routing model, to reduce travel distance, using heuristics based on traveling salesman problem. A novel distance metric was proposed to match different store layouts. 
 2. A comprehensive staff productivity graph was created to track the scanning activity, idle time, travel time.
 3. Heuristic-based restock strategy was created to alert the restock point based on BOH. 
@@ -162,12 +169,12 @@ Kroger}{\textsc{Large Scale Optimization Lab(Lab 249) from WSU partner with Krog
 
 \begin{itemize}
 \item \textbf{Product Promotion Planning and Assortment Optimization}: A MILP optimization model (Collaborative Category Optimization) was
-jointly developed with \textsc{A.T. Kearney} using AIMMS to build promotion planning and
+jointly developed with \textsc{Kearney} using AIMMS to build promotion planning and
 assortment selection to maximize the adjusted gross revenue.
-The system is implemented in 2014 and saves about 3\% to 5\% (\$2 to \$5 billion) of the total revenue annually.
+The system is implemented in 2014 and saved about \$400 millions. 
 %\newline{}
 \item \textbf{Forecast and Optimization for the Little Clinics and Nurse Scheduling}: The problem is
-to accurately forecast the number of patients by type to each clinic.
+to accurately forecast the number of patients by type to each clinic, then to create a scheduling system.
 Sophisticated forecast models that utilize inputs from time, weather, social
 media data like Google trend queries are used to predict the number of
 visits. These forecasts serve as input to calculate the inventory necessary for
@@ -183,7 +190,7 @@ reduced. The model is piloted in 121 stores and is expected
 to produce \$30 to \$50 million savings as well as reduction in
 out-of-stock.
 
- \item \textbf{Periodic Vehicle Routing}: Each Kroger store has demand that
+ \item \textbf{Periodic Vehicle Routing}: Each store has demand that
  fluctuates within a week in various categories, such as frozen, fresh, and
  grocery. Determining the frequency of visit to each store for each category is
  a complex periodic vehicle routing problem. Sophisticated optimization models
@@ -220,7 +227,7 @@ for WSU annually.
 2. Intro of Operations Research Models.
 \item \textbf{Dissertation Committee:}
     \begin{enumerate}
-\item Xinhui Zhang(Supervisor): Director of Data Science at Coupang. Three times INFORMS Franz Edelman Award finalist.
+\item Xinhui Zhang(Supervisor): Senior Director of Data Science at Coupang. Three times INFORMS Franz Edelman Award finalist.
 \item Pratik Parikh: Chair of Dept of Industrial Engineering, University of Louisville.
 \item Nan Kong: Purdue University. 
 \item Caroline Cao: Director of Engineering Innovation \& Medical Simulation, University of Illinois Urbana-Champaign.
