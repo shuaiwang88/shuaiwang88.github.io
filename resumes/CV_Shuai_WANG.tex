@@ -1,329 +1,143 @@
-%-----------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%------------------------------------------------------------------------------
-\documentclass[12pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12;
-%paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or
-%landscape; font families: sans or roman
+\documentclass[12pt,a4paper,sans]{moderncv}
+\moderncvstyle{banking}
+\moderncvcolor{black}
 
-\moderncvstyle{banking} % CV theme - options include: 'casual' (default),
-%'classic', 'oldstyle' and 'banking'
-\moderncvcolor{black} % CV color - options include: 'blue' (default), 'orange',
-%'green', 'red', 'purple', 'grey' and 'black'
-
-\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the
-%template
+\usepackage{lipsum}
 \usepackage{verbatim}
-\usepackage[scale=0.9]{geometry} % Reduce document margins
-%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the
-%dates column
-%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment
-%to adjust the width of the space allocated to your name
-%------------------------------------------------------------------------------
-%	NAME AND CONTACT INFORMATION SECTION
-%------------------------------------------------------------------------------
+\usepackage[scale=0.9]{geometry}
 
-\firstname{Shuai} % Your first name
-\familyname{Wang} % Your last name
-
+%-----------------------------------------------------------------------------
+%   NAME AND CONTACT INFORMATION
+%-----------------------------------------------------------------------------
+\firstname{Shuai}
+\familyname{Wang}
 \title{Curriculum Vitae}
 \address{Cincinnati, Ohio 45242}{}
-\mobile{(937)-654-0806}
-\email{vanstark88 at gmail.com}
+\mobile{(937) 654-0806}
+\email{vanstark88@gmail.com}
 \homepage{shuaiwang88.github.io}
 
-%------------------------------------------------------------------------------
-
 \begin{document}
-\setlength{\parskip}{2em}
-\makecvtitle % Print the CV title
-%
-% \begin{center}{
-% \textbf{I build end-to-end data science and operations research project.}
-%    } 
-% \end{center}
+\setlength{\parskip}{1em}
+\makecvtitle
 
 
-%------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%------------------------------------------------------------------------------
-
+\section{Summary}
+Data Science and Operations Research leader with 15+ years of experience delivering high-impact optimization, machine learning, and AI solutions. Specialized in mathematical programming, optimization, time series analysis, and GenAI applications. Proven track record of developing end-to-end systems that drive operational efficiency: saving \$1B+ annually at Kroger) and create new revenue streams (TMX Index used in Congressional hearings and investment research). Combines deep technical expertise in optimization algorithms and model development with strong leadership in creating roadmap, mentoring teams, and aligning data initiatives with business objectives in areas like: operation, omni-channel marketing, customer service/experience, etc. 
+%-----------------------------------------------------------------------------
+%   EDUCATION SECTION
+%-----------------------------------------------------------------------------
 \section{Education}
-\cventry{2011--2017}{Ph.D. in Engineering Program, Industrial and Human
-System}
-{Wright State University}{Dayton, Ohio}{}{}  
-% Arguments not required can be left empty
-%\cventry{2011--2012}{Master in Engineering and Entrepreneurship
-%Program}{Wright State University}{Dayton, Ohio}{UNFINISHED}{}
+\cventry{2011--2017}{Ph.D. in Engineering, Industrial and Human Systems}{Wright State University}{Dayton, Ohio}{}{}
 \cventry{2007--2011}{Bachelor of Management, Supply Chain Management}{Dalian Jiaotong University}{Dalian, China}{}{}
-%\vspace*{3mm} %this will fix vertical spacing for \moderncvstyle{classic}, but
-%create vertical spacing issues for other \moderncvstyle{xyz}.
 
-%-----------
-
-%------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
-%------------------------------------------------------------------------------
-%\section{}
-\section{Computer Skills} 
-\cvitem{Language}{Python, R, Julia; SQL}
-%\cvitem{Machine Learning}{regression, classification, clustering; xgboost, lightgbm, etc} 
-\cvitem{AutoML}{Datarobot, H2O; Pycaret, GlutonTS}
-\cvitem{Optimization Modeling}{AIMMS, Pyomo, Minizinc, JuMP, OPL; Cplex, Gurobi, CBC, HiGHS }
-\cvitem{GenAI}{Snowflake Cortex, GPRO, PRO, LangChain }
-%\cvitem{Heuristic}{Simulated Annealing, Genetic Algorithm, Tabu Search, Golden Section Search, etc.}
-%\cvitem{Time Series}{Anomaly detection, Forecasting, Correlation}
-%\cvitem{Discrete Event Simulation}{Arena, AnyLogic, Sigma}
-\cvitem{Database}{Snowflake, Redshift, Clickhouse, Postgres, MySql, dbt}
-%\cvitem{Cloud}{AWS Lambda, Sagemaker, Snowpark, Spark, Airflow, API Gateway, EC2}
+%-----------------------------------------------------------------------------
+%   TECHNICAL SKILLS
+%-----------------------------------------------------------------------------
+\section{Technical Skills}
+\cvitem{Languages}{Python, R, Julia, SQL}
+\cvitem{AutoML}{DataRobot, H2O, PyCaret, GluonTS}
+\cvitem{Optimization}{AIMMS, Pyomo, MiniZinc, JuMP, OPL; CPLEX, Gurobi, CBC, HiGHS}
+\cvitem{GenAI}{Snowflake Cortex, GPT, LangChain, LLM}
+\cvitem{Heuristics}{Simulated Annealing, Genetic Algorithms, Tabu Search, etc}
+\cvitem{Time Series}{Anomaly Detection, Forecasting, Correlation Analysis}
+\cvitem{Database}{Snowflake, Redshift, ClickHouse, PostgreSQL, MySQL, dbt}
+\cvitem{Cloud}{AWS Lambda, SageMaker, Snowpark, Spark, Airflow, API Gateway, EC2}
 \cvitem{Visualization}{Shiny, Looker, Superset, Tableau, Streamlit, Dash}
 
+%-----------------------------------------------------------------------------
+%   PROFESSIONAL EXPERIENCE
+%-----------------------------------------------------------------------------
+\section{Professional Experience}
 
-\section{Experience}
-\cventry{2023.6--Current} {Senior Data Scientist, Full time}{\textsc{Pacific Life Insurance}}{Newport Beach, CA}{}{}
+\cventry{2023--Present}{Senior Data Scientist (Manager Level)}{Pacific Life Insurance}{Newport Beach, CA}{}
+{
+    \textbf{Leadership:} Create roadmaps and portfolios for data science projects in operations, Generative AI, and customer service. Mentor junior data scientists.
+    \begin{itemize}
+        \item Developed time series forecasting models using AutoML to predict task volumes for annuity and life products
+        \item Built MILP-based skill-routing task assignment system using Pyomo and HiGHS solver, improving productivity by 10-20\% across business functions
+        \item Implemented Chatbot GenAI tool for customer service using Snowflake's Cortex LLM suite
+        \item Optimized call center operations through virtual queue and callback policy implementation
+        \item Redesigned mortality tables (life tables) using mathematical optimization techniques
+    \end{itemize}
+}
 
-Creating roadmap and portfolio for data science projects on operation area. 
+\cventry{2021--2023}{Principal Data Scientist (Tech Lead)}{Thomasnet}{New York, NY}{}
+{
+    \textbf{Leadership:} Reported to Head of Data and AI. Established multiple data initiatives from conception.
+    \begin{itemize}
+        \item \textbf{Internal Projects:}
+        \begin{itemize}
+            \item Applied AutoML to customer churn prediction, bot detection, and sales forecasting
+            \item Developed integer programming model for product portfolio/ad placement optimization to maximize ROI
+            \item Created Python libraries for enterprise data cleaning, extraction, and normalization
+            \item Introduced Superset, DataHub, and Amundsen for improved data governance
+        \end{itemize}
+        \item \textbf{External Products:}
+        \begin{itemize}
+            \item Built time series anomaly detection system for institutional investors' sourcing activities
+            \item Developed sourcing trend analysis and stock price/revenue correlation models
+            \item Created TMX Index to track U.S. supply chain status (used in Congressional hearings and COVID-19 research)
+            \item Designed APIs and visualizations for alternative data platform with Datawheel
+        \end{itemize}
+    \end{itemize}
+}
 
-Leading data science projects in the tech areas of math optimization, forecasting, and function areas in operations, customer service, call center, and marketing.
+\cventry{2017--2021}{Lead Operations Research Scientist}{Kroger/84.51}{Cincinnati, OH}{}
+{
+    \begin{itemize}
+        \item \textbf{Order Forecasting \& Staff Scheduling:}
+        \begin{itemize}
+            \item Developed ML-based order forecasting and optimization model for picking staff scheduling
+            \item Reduced labor costs by 20-30\% (\$200-300M annually) using CBC/CPLEX solver
+            \item COVID-19 response top-priority project
+        \end{itemize}
+        \item \textbf{Inventory Control:}
+        \begin{itemize}
+            \item Created inventory replenishment routing model using TSP-style heuristics with novel layout-aware distance metric
+            \item Developed comprehensive staff productivity tracking system (scanning, idle time, travel time)
+            \item Implemented heuristic-based restock alerts using BOH data
+        \end{itemize}
+    \end{itemize}
+}
 
-\begin{itemize}
-\item Developed various time series forecasting using AutoML, for processing task volume for annuity and life products.
+\cventry{2012--2017}{Operations Research Consultant}{WSU/Kroger Large Scale Optimization Lab}{Cincinnati, OH}{}
+{
+    \begin{itemize}
+        \item \textbf{Promotion Planning:} Developed MILP model (AIMMS) for promotion planning and assortment optimization, saving \$400M annually
+        \item \textbf{Clinic Scheduling:} Built forecasting models using time, weather, and social media data to predict patient visits for 500 clinics
+        \item \textbf{Pharmacy Inventory:} Created inventory transfer model pilot-tested in 121 stores, projected \$30-50M savings
+        \item \textbf{Vehicle Routing:} Developed periodic vehicle routing solution reducing transportation costs by 10\% (\$150M)
+        \item \textbf{Call Center:} Implemented staff scheduling model using genetic algorithms to minimize under-coverage
+    \end{itemize}
+}
 
-\item Created a MILP based skill-based routing task assignment system, by using HiGHS solver via Pyomo, to optimize tasks dispatching by considering specialist competence, task priority, time constraints, etc. Productivity improved 10 to 20 percent across business functions. 
-%\item Leading the data science development for the Medallia VOC(Voice of Customer) for call center in the areas of topics, sentimental, trend.
-\item Created a GenAI tool for customer service and operation by using customer voice data. Implemented using Snowflake's cortex LLM suit. 
-\item Implemented virtual queue, call back policy to call center.
-\item Re-created mortality table(life table) using math optimization. 
-
-\end{itemize}
-
-
-\bigskip
- 
-\cventry{2021.4--2023.5} {Principal Data Scientist, Full time}{\textsc{Thomasnet}}{New York, NY}{}{
-Reporting to head of data and AI. Creating roadmaps for data science projects. 
-I started several 0 to 1 data initiatives at Thomasnet including:}
-\begin{itemize}
-\item \textbf{Internal facing:}
+\cventry{2011--2017}{Graduate Researcher/TA}{Wright State University}{Dayton, OH}{}
+{
+    \begin{itemize}
+        \item \textbf{PhD Dissertation:} Developed data mining techniques and optimization models for scholarship allocation, increasing enrollment revenue by \$5-10M annually
+        \item \textbf{Teaching:} Courses in Data Mining and Operations Research
+            \item \textbf{Dissertation Committee:}
     \begin{enumerate}
-    \item Applied AutoML to models like customer churn, bot detection, and sales forecasting.
-    \item Recommending products portfolio/ad placement to customers(suppliers) to maximize ROI like views  and inquiries,  using integer programming optimization.
-    \item  Creating data cleaning, extraction, normalization python library for all the enterprise data ingestion pipeline.
-    \item Introducing new tools like Superset, Datahub, and Amundsen to the enterprise for better data governance and visualization.
-    \end{enumerate}
-\item \textbf{External facing:}
-    \begin{enumerate}
-    \item Creating time series anomaly detection (signals) of sourcing activities for institutional investors.
-    \item Creating sourcing trend and stock price/revenue correlation for institutional investors.
-    \item Working on TMX index to track supply chain status in the USA. TMX is used by researchers from Carnegie Mellon University for Congressional hearing on supply chain, and University of Hong Kong for COVID19 related studies.
-    \item Creating APIs and charts for the Thomasnet's alternative data platform for institutional investors with Datawheel.
-    \end{enumerate}
-\end{itemize}
- \bigskip
-
- 
-%\cventry{2022.11.9--Current} {Founder}
-%{\textsc{AutoEncoder LLC}}{Cincinnati, OH}{}{}
-%My own consulting practice.
-%The clients include: 
-%\begin{itemize}
-%    \item McKinsey \& Company: Pricing and promotion planning for retail.
-%    \item SightLine: College enrollment analysis. 
-%\end{itemize}
-
-
-
-\bigskip
-\cventry{2017.9--2021.4}{Lead Operations Research Scientist, Contract through Global Associates}
-{\textsc{Kroger/84.51}}{Cincinnati, OH}{}{
-I transferred with Kroger's R\&D team, to Kroger's subsidiary data analytical company 84.51 in February 2018.}
-\begin{itemize}
-\item \textbf{Order Forecast and Picking Staff Daily Scheduling System Optimization}: 
-    The daily staff scheduling system is built to optimize the number of staff required to picking 
-    orders at each hour.
-    Time-series based machine learning model is implemented to predict the orders. 
-    An optimization model using CBC/Cplex solver is created to minimize labor cost. 
-    The project saved about 20\% to 30\% labor cost (\$200 to \$300 million) than the previous implementation. 
-    This project was escalated as one of top priority projects responding to COVID-19 at Kroger.
-\item \textbf{In-store Inventory Control and Restock Optimization}:
-The project is to transform the in-store inventory into science-based management system, to increase productivity:
-1. I build the inventory replenishment routing model, to reduce travel distance, using heuristics based on traveling salesman problem. A novel distance metric was proposed to match different store layouts. 
-2. A comprehensive staff productivity graph was created to track the scanning activity, idle time, travel time.
-3. Heuristic-based restock strategy was created to alert the restock point based on BOH. 
-
-
-\end{itemize}
-
-
-
-\bigskip
-%\bigskip
-
-\cventry{2012--2017}{Operations Research Consultant at 
-Kroger}{\textsc{Large Scale Optimization Lab(Lab 249) from WSU partner with Kroger}}{Cincinnati, OH}{}
-{} 
-{}
-%Role: make mathematical model, implement 
-%core algorithm
-% \newline{}
-% \textbf{Key modeler for selected projects}:
-
-\begin{itemize}
-\item \textbf{Product Promotion Planning and Assortment Optimization}: A MILP optimization model (Collaborative Category Optimization) was
-jointly developed with \textsc{Kearney} using AIMMS to build promotion planning and
-assortment selection to maximize the adjusted gross revenue.
-The system is implemented in 2014 and saved about \$400 millions. 
-%\newline{}
-\item \textbf{Forecast and Optimization for the Little Clinics and Nurse Scheduling}: The problem is
-to accurately forecast the number of patients by type to each clinic, then to create a scheduling system.
-Sophisticated forecast models that utilize inputs from time, weather, social
-media data like Google trend queries are used to predict the number of
-visits. These forecasts serve as input to calculate the inventory necessary for
-each type of sickness, and the allocation of medical personnel and their
-shifts. The overall goal is to improve customer service and increase the number
-of clinics from 136 to 500 in three to five years.
-%\newline{}
-\item \textbf{High Value Pharmacy Product Local Inventory Transfer}:  The problem is to ship 
-medical drugs from stores with excess to stores with needs so as to: 1) reduce
-potential obsolesces in inventory; 2) better position drugs to meet customer
-demand; 3) to aggregate the shipment in such that transportation costs are
-reduced. The model is piloted in 121 stores and is expected
-to produce \$30 to \$50 million savings as well as reduction in
-out-of-stock.
-
- \item \textbf{Periodic Vehicle Routing}: Each store has demand that
- fluctuates within a week in various categories, such as frozen, fresh, and
- grocery. Determining the frequency of visit to each store for each category is
- a complex periodic vehicle routing problem. Sophisticated optimization models
- have been built to determine the time of visits for each stores;  these
- optimized visit frequencies are expected to result in a reduction of 10\%
- (equivalent to \$150 million) in transportation cost.
- \item \textbf{Pharmacy Department Register Simulation}: Each store has a
- different volume in terms of patients visit and service time. The simulation
- model, based on queueing theory, was created to adjust the number of registers to be installed in
- each store, as a function of service time and customer volume.
-
-
-\item \textbf{Call Center Staff Scheduling}:
-I developed a call center staff scheduling model using genetic algorithm, to minimize under-coverage rate.
-\end{itemize} 
- 
-\bigskip
-
-\cventry{2011--2017} {Graduate Research and Teaching
-Assistant}{\textsc{Wright State University}}{Dayton, OH}{}
-{}
-\begin{itemize}
-\item \textbf{PhD Dissertation: Data mining techniques and mathematical models for the optimal scholarship allocation problem for a state university.}
-The research uses classification algorithms to find
-matriculation and graduation rate by varying scholarships. Then the
-optimization model was developed to optimize revenue under budget, and fairness constraints.
-This research has prompted the university wide scholarship redesign, the APS
-calculator, see \href{http://www.wright.edu/raider-connect/financial-aid/first-year-scholarships}{Website}. 
-This project has resulted a 11\% (2014) and 13.9\% (2015) increase in direct admit
-students, which translates into a 5 to 10 million dollars of revenue increase
-for WSU annually.
-\item \textbf{Teaching Assistant:}
-1. Intro of Data Mining and Applications. 
-2. Intro of Operations Research Models.
-\item \textbf{Dissertation Committee:}
-    \begin{enumerate}
-\item Xinhui Zhang(Supervisor): Senior Director of Data Science at Coupang. Three times INFORMS Franz Edelman Award finalist.
+\item Xinhui Zhang(Supervisor): Senior Director of Data Science at Coupang. Three times INFORMS Franz Edelman Award laureate.
 \item Pratik Parikh: Chair of Dept of Industrial Engineering, University of Louisville.
 \item Nan Kong: Purdue University. 
 \item Caroline Cao: Director of Engineering Innovation \& Medical Simulation, University of Illinois Urbana-Champaign.
 \item Subhashini Ganapathy: Dean of the College of Graduate Studies, Wright State University.
 \end{enumerate}
- \end{itemize}
- 
-\bigskip
-
-\cventry{}{Operations Research/Data Science Consultant}
-{\textsc{Pro Bono}}{}{}{}{
-\begin{itemize}
-\item \textbf{Cincinnati Public School Bus Routing and Bell Time Optimization}: I wrote the core optimization algorithm using meta-heuristics, Julia with CBC/Gurobi solver. The result is comparable to the MIT's awarded solution for the Boston public school system.
-\item \textbf{NYC Dog Care Stores Weekly Staff Scheduling Optimization}: I helped a dog 
-care store with 5 locations to create a weekly staff scheduling system with various 
-constraints such as: staff schedule preference, locations preference, demand coverage, and cross-skills satisfaction. 
-
-\end{itemize}
-
-
+    \end{itemize}
 }
 
-
-
-
-
-
-%\newpage
-
-%------------------------------------------------
-%\cventry{2011.4--2011.8} {Marketing Intern}{\textsc{China Tobacco}}{Beijing,
-%China}{}{Conducted intensive marketing analysis for The British American
-%Tobacco Co. to broad the Chinese sales channel.}
-
-%\cventry{09.6--09.8,08.6-08.8}{Inventory Management Intern, Business
-%Management Intern}{\textsc{The River Seine Food Management }}{Shanghai,
-%China}{}{Using ERP to track inventory and reverse logistics. Developed an
-%algorithm to re-align the layout of each restaurant according to the daily
-%reservation.}
-
-
-%	AWARDS SECTION
-
-%\begin{comment}
-% \section{Awards and Other Information}
-% \cvitem{2016}{Last year Ph.D. Assistantships, \textit{College of Engineering
-% and Computer Science,Wright State University} }
-% \cvitem{2012}{Ph.D. in Engineering Program University Assistantships,
-% \textit{College of Engineering and Computer Science,Wright State University} }
-% \cvitem{2011}{Provost Enrollment Scholarship, \textit{Wright State University
-% Provost Office} }
-%\cvitem{2011}{Student International Travel Grant, \textit{Dalian Jiaotong
-%University} }
-% \cvitem{Citizenship} {P.R.China. USA permanent resident}
-%\end{comment}
-
-
-
-%	COMPUTER SKILLS SECTION
-%------------------------------------------------------------------------------
-
-
-\comment{
-
-
-
-
-
-\section{Languages}
-
-\cvitemwithcomment{Chinese}{Mother tongue}{}
-\cvitemwithcomment{English}{Fluent}{IELTS:7}
-%------------------------------------------------------------------------------
-%	INTERESTS SECTION
-%------------------------------------------------------------------------------
-
-
-\section{Interests}
-
-\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
-
-\cvlistdoubleitem{Trading}{Fishing}
-\cvlistdoubleitem{Music Performance}{Long distance running}
-\cvlistitem{HIIT}
-
-\comment{
-\section{Courses Highlight}
-\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
-\cvlistdoubleitem{Deterministic O.R. Models}{Stochastic Models for Engineer}
-\cvlistdoubleitem{Modern Heuristic}{Integer Programming}
-\cvlistdoubleitem{Simulation And Stochastic Models}{Discrete Event Simulation}
-\cvlistdoubleitem{Design of Experiment}{Design Optimization}
-\cvlistdoubleitem{Probability And Stats}{Data Mining}
-\cvlistdoubleitem{Supply Chain Analysis and Design}{Applied Linear Technique}
+%-----------------------------------------------------------------------------
+%   CONSULTING/PRO BONO
+%-----------------------------------------------------------------------------
+\section{Consulting Experience}
+\cventry{}{Pro Bono Projects}{}{}{}
+{
+    \begin{itemize}
+        \item \textbf{Cincinnati Public Schools:} Developed bus routing optimization algorithm (Julia/CBC/Gurobi) comparable to MIT's solution for Boston
+        \item \textbf{NYC Dog Care:} Created weekly staff scheduling system for 5 locations accommodating preferences and cross-skill requirements
+    \end{itemize}
 }
 
-
-}
 \end{document}
