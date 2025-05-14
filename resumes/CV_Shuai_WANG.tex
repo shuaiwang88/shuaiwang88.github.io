@@ -2,13 +2,8 @@
 \moderncvstyle{banking}
 \moderncvcolor{black}
 
-\usepackage{lipsum}
-\usepackage{verbatim}
 \usepackage[scale=0.9]{geometry}
 
-%-----------------------------------------------------------------------------
-%   NAME AND CONTACT INFORMATION
-%-----------------------------------------------------------------------------
 \firstname{Shuai}
 \familyname{Wang}
 \title{Curriculum Vitae}
@@ -22,122 +17,105 @@
 \makecvtitle
 
 \section{Summary}
-Data Science and Operations Research leader with 10+ years of experience delivering high-impact optimization, machine learning, and AI solutions. Specialized in mathematical programming, optimization, time series analysis, and GenAI applications. Proven track record of developing end-to-end systems that drive operational efficiency: saving \$1B+ annually at Kroger), and create new revenue streams (TMX Index used in Congressional hearings and investment research, sales propensity). Combines deep technical expertise in optimization algorithms and model development with strong leadership in creating roadmap, mentoring teams, and aligning data initiatives with business objectives in areas like: process operation, omni-channel marketing, customer experience, promotion planning, inventory, higher education, transportation, call center, retail pricing, pharmacy, clinics, etc.  
-%-----------------------------------------------------------------------------
-%   EDUCATION SECTION
-%-----------------------------------------------------------------------------
-\section{Education}
-\cventry{2011--2017}{Ph.D. in Engineering, Industrial and Human Systems}{Wright State University}{Dayton, Ohio}{}{}
-\cventry{2007--2011}{Bachelor of Management, Supply Chain Management}{Dalian Jiaotong University}{Dalian, China}{}{}
+Strategic leader in Data Science and Operations Research with 10+ years of experience driving enterprise transformation through advanced analytics, optimization, and AI. Expert in turning complex data problems into scalable solutions that align with business goals, streamline operations, and create new revenue channels. Proven ability to define vision, build cross-functional roadmaps, and lead teams in delivering impactful outcomes across retail, insurance, finance, healthcare, education, and logistics.
 
-%-----------------------------------------------------------------------------
-%   TECHNICAL SKILLS
-%-----------------------------------------------------------------------------
+\section{Education}
+\cventry{}{Ph.D. in Engineering, Industrial and Human Systems}{Wright State University}{Dayton, Ohio}{}{}
+\cventry{}{Bachelor of Management, Supply Chain Management}{Dalian Jiaotong University}{Dalian, China}{}{}
+
 \section{Technical Skills}
 \cvitem{Languages}{Python, R, Julia, SQL}
 \cvitem{AutoML}{DataRobot, H2O, PyCaret, GluonTS}
 \cvitem{Optimization}{AIMMS, Pyomo, MiniZinc, JuMP, OPL; CPLEX, Gurobi, CBC, HiGHS}
-\cvitem{GenAI}{Snowflake Cortex, GPT, LangChain, LLM}
-\cvitem{Reinforcement Learning}{Thompson sampling, Epsilon-decay }
-%\cvitem{Heuristics}{Simulated Annealing, Genetic Algorithms, Tabu Search, etc}
-\cvitem{Time Series}{Anomaly Detection, Forecasting, Correlation Analysis}
+\cvitem{GenAI}{Snowflake Cortex, LangChain}
+\cvitem{Reinforcement Learning}{Thompson sampling, Epsilon-decay}
+\cvitem{Time Series}{Anomaly Detection, Forecasting, Time Warping}
 \cvitem{Database}{Snowflake, Redshift, ClickHouse, PostgreSQL, MySQL, dbt}
 \cvitem{Cloud}{AWS Lambda, SageMaker, Snowpark, Spark, Airflow, API Gateway, EC2}
 \cvitem{Visualization}{Streamlit, Shiny, Looker, Superset, Tableau, Dash}
 
-%-----------------------------------------------------------------------------
-%   PROFESSIONAL EXPERIENCE
-%-----------------------------------------------------------------------------
 \section{Professional Experience}
 
-\cventry{2023--Present}{Senior Data Scientist (Principal)}{Pacific Life Insurance}{Newport Beach, CA}{}
-{
-    \textbf{Leadership:} Create roadmaps and portfolios for data science projects in operations, Generative AI, and customer service. Mentor junior data scientists.
-    \begin{itemize}
-        \item Developed time series forecasting models using AutoML to predict task volumes for annuity and life products
-        \item Built MILP-based skill-routing task assignment system using Pyomo and HiGHS solver, improving productivity by 10-20\% across business functions
-        \item Implemented Chatbot GenAI tool for customer service using Snowflake's Cortex LLM suite
-        \item Optimized call center operations through virtual queue and callback policy implementation
-        \item Redesigned mortality tables (life tables) using mathematical optimization techniques
-    \end{itemize}
-}
+\cventry{2023--Present}{Senior Data Scientist (Principal)}{Pacific Life Insurance}{Newport Beach, CA}{}{
+\textbf{Strategic Leadership:} Define and execute data science strategy for operational transformation, customer experience, and GenAI innovation. Mentor teams and partner with business leaders to prioritize and deliver high-impact initiatives.
+\begin{itemize}
+  \item Designed and led rollout of a capability-driven workforce routing platform that aligned operational staffing with business demand, improving efficiency by 10 to 20\% across business units.
+  \item Spearheaded deployment of the first enterprise-wide GenAI tool, enhancing customer service quality and response speed using Snowflake Cortex LLM.
+  \item Partnered with business leaders to redesign call center operations with virtual queuing and callback strategies, improving service-level performance.
+  \item Reengineered actuarial modeling through advanced optimization techniques, contributing to more competitive pricing strategies.
+  \item Forecasted demand trends across product lines using scalable AutoML workflows, enabling proactive capacity planning.
+\end{itemize}}
 
-\cventry{2021--2023}{Principal Data Scientist (Tech Lead)}{Thomasnet}{New York, NY}{}
-{
-    \textbf{Leadership:} Reported to Head of Data and AI. Established multiple data initiatives from conception.
-    \begin{itemize}
-        \item \textbf{Internal Projects:}
-        \begin{itemize}
-            \item Applied AutoML to customer churn prediction, bot detection, and sales forecasting
-            \item Developed integer programming model for product portfolio/ad placement optimization to maximize ROI
-            \item Created Python libraries for enterprise data cleaning, extraction, and normalization
-            \item Introduced Superset, DataHub, and Amundsen for improved data governance
-        \end{itemize}
-        \item \textbf{External Products:}
-        \begin{itemize}
-            \item Built time series anomaly detection system for institutional investors' sourcing activities
-            \item Developed sourcing trend analysis and stock price/revenue correlation models
-            \item Created TMX Index to track U.S. supply chain status (used in Congressional hearings and COVID-19 research)
-            \item Designed APIs and visualizations for alternative data platform with Datawheel
-        \end{itemize}
-    \end{itemize}
-}
+\bigskip
 
-\cventry{2017--2021}{Lead Operations Research Scientist}{Kroger/84.51}{Cincinnati, OH}{}
-{
-    \begin{itemize}
-        \item \textbf{Order Forecasting \& Staff Scheduling:}
-        \begin{itemize}
-            \item Developed ML-based order forecasting and optimization model for picking staff scheduling
-            \item Reduced labor costs by 20-30\% (\$200-300M annually) using CBC/CPLEX solver
-            \item COVID-19 response top-priority project
-        \end{itemize}
-        \item \textbf{Inventory Control:}
-        \begin{itemize}
-            \item Created inventory replenishment routing model using TSP-style heuristics with novel layout-aware distance metric
-            \item Developed comprehensive staff productivity tracking system (scanning, idle time, travel time)
-            \item Implemented heuristic-based restock alerts using BOH data
-        \end{itemize}
-    \end{itemize}
-}
+\cventry{2021--2023}{Principal Data Scientist (Tech Lead)}{Thomasnet}{New York, NY}{}{
+\textbf{Strategic Data Enablement:} Acted as strategic advisor to Head of Data and AI. Established foundational data science capabilities and delivered analytic products aligned with executive and client priorities.
+\begin{itemize}
+  \item \textbf{Enterprise Optimization:}
+  \begin{itemize}
+    \item Drove adoption of AutoML to streamline retention strategies and reduce operational blind spots across customer lifecycle.
+    \item Developed high-impact decision models for ROI-optimized product positioning and digital asset monetization.
+    \item Created reusable Python libraries to accelerate enterprise data pipeline development and enforce quality standards.
+  \end{itemize}
+  \item \textbf{Product Innovation:}
+  \begin{itemize}
+    \item Conceived and delivered a sourcing intelligence product for financial institutions using anomaly detection in procurement behavior.
+    \item Led development of the TMX Index, a macroeconomic supply chain indicator leveraged by the United State Congress and media during COVID-19 recovery planning.
+    \item Collaborated with external partner Datawheel to deliver API-driven visualization tools for data storytelling and monetization.
+  \end{itemize}
+\end{itemize}}
 
-\cventry{2012--2017}{Operations Research Consultant}{WSU/Kroger Large Scale Optimization Lab}{Cincinnati, OH}{}
-{
-    \begin{itemize}
-        \item \textbf{Promotion and Assortment Planning:} Developed MILP model (AIMMS) for promotion planning and assortment optimization, saving \$400M annually
-        \item \textbf{Clinic Scheduling:} Built forecasting models using time, weather, and social media data to predict patient visits for 500 clinics. Developed a nurse scheduling system
-        \item \textbf{Pharmacy Inventory:} Created inventory transfer model pilot-tested in 121 stores, projected \$30-50M savings
-        \item \textbf{Vehicle Routing:} Developed periodic vehicle routing solution reducing transportation costs by 10\% (\$150M)
-        \item \textbf{Call Center:} Implemented staff scheduling model using genetic algorithms to minimize under-coverage
-    \end{itemize}
-}
+\bigskip
 
-\cventry{2011--2017}{Graduate Researcher/Teaching Assitant}{Wright State University}{Dayton, OH}{}
-{
-    \begin{itemize}
-        \item \textbf{PhD Dissertation:} Developed data mining techniques and optimization models for scholarship allocation, increasing enrollment revenue by \$5-10M annually
-        \item \textbf{Teaching:} Courses in Data Mining and Operations Research
-            \item \textbf{Dissertation Committee:}
-    \begin{enumerate}
-\item Xinhui Zhang(Supervisor): Senior Director of Data Science at Coupang. Three times INFORMS Franz Edelman Award laureate.
-\item Pratik Parikh: Chair of Dept of Industrial Engineering, University of Louisville.
-\item Nan Kong: Purdue University. 
-\item Caroline Cao: Director of Engineering Innovation \& Medical Simulation, University of Illinois Urbana-Champaign.
-\item Subhashini Ganapathy: Dean of the College of Graduate Studies, Wright State University.
-\end{enumerate}
-    \end{itemize}
-}
+\cventry{2017--2021}{Lead Operations Research Scientist}{Kroger/84.51}{Cincinnati, OH}{}{
+\textbf{Operational Transformation:} Delivered decision science systems with measurable P\&L impact across labor planning, logistics, and inventory optimization for a Fortune 20 retailer.
+\begin{itemize}
+  \item \textbf{Labor Strategy:}
+  \begin{itemize}
+    \item Designed and deployed a machine learning and optimization-based labor planning system that reduced annual costs by \$200–300M while improving service fulfillment.
+    \item Directed COVID-19 surge response modeling to inform executive decision-making during peak demand volatility.
+  \end{itemize}
+  \item \textbf{Inventory and Routing Innovation:}
+  \begin{itemize}
+    \item Developed layout-aware routing and replenishment systems to reduce stockout risks and streamline labor workflows.
+    \item Created integrated productivity tracking and heuristic alert systems to drive in-store performance accountability.
+  \end{itemize}
+\end{itemize}}
 
-%-----------------------------------------------------------------------------
-%   CONSULTING/PRO BONO
-%-----------------------------------------------------------------------------
+\bigskip
+
+\cventry{2012--2017}{Operations Research Consultant}{WSU/Kroger Large Scale Optimization Lab}{Cincinnati, OH}{}{
+\textbf{Strategic Modeling Advisor:} Designed and validated multi-million-dollar optimization solutions across healthcare, retail, and logistics, often informing executive-level decisions.
+\begin{itemize}
+  \item Partnered with merchandising to create a promotion and assortment optimization model, saving \$400M annually through improved marketing effectiveness.
+  \item Led patient flow forecasting and nurse scheduling optimization for 500 clinics, reducing wait times and improving care delivery.
+  \item Designed cross-store pharmacy inventory transfer network, projecting \$30M to 50M in reduced spoilage and emergency orders.
+  \item Architected a cost-saving vehicle routing model that reshaped the national logistics network, delivering 10\% savings.
+  \item Provided call center scheduling strategy using advanced heuristics to improve labor coverage and reduce customer hold times.
+\end{itemize}}
+
+\bigskip
+
+\cventry{2011--2017}{Graduate Researcher/Teaching Assistant}{Wright State University}{Dayton, OH}{}{
+\textbf{Research Impact:} Delivered scholarship allocation models adopted institution-wide, enhancing student recruitment and financial planning. Supported academic instruction in analytics.
+\begin{itemize}
+  \item \textbf{Dissertation:} Designed predictive and optimization-based scholarship strategy, increasing university revenue by \$5M to 10M annually through improved yield.
+  \item \textbf{Teaching:} Supported curriculum in Data Mining and Operations Research.
+  \item \textbf{Dissertation Committee:}
+  \begin{enumerate}
+    \item Xinhui Zhang (Supervisor): Senior Director of Data Science at Coupang; 3X INFORMS Franz Edelman Award Laureate.
+    \item Pratik Parikh: Chair, Industrial Engineering, University of Louisville.
+    \item Nan Kong: Purdue University.
+    \item Caroline Cao: Director of Engineering Innovation, UIUC.
+    \item Subhashini Ganapathy: Dean of Graduate Studies, Wright State University.
+  \end{enumerate}
+\end{itemize}}
+
 \section{Consulting Experience}
-\cventry{}{Pro Bono Projects}{}{}{}
-{
-    \begin{itemize}
-        \item \textbf{Cincinnati Public Schools:} Developed bus routing and bell time optimization algorithm (Julia/CBC/Gurobi) comparable to MIT's solution for Boston public school
-        \item \textbf{NYC Dog Care:} Created weekly staff scheduling system for 5 locations accommodating preferences and cross-skill requirements
-    \end{itemize}
-}
+\cventry{}{Pro Bono Projects}{}{}{}{
+\begin{itemize}
+  \item \textbf{Cincinnati Public Schools Bus Routing and Bell Time Optimizaion:} Advised district-wide transportation redesign through strategic optimization modeling; results comparable to MIT-led Boston initiative.
+  \item \textbf{NYC Dog Care:} Developed multi-site workforce scheduling solution improving operational flexibility and labor satisfaction in a cross-skill environment.
+\end{itemize}}
 
 \end{document}
