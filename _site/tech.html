@@ -1,66 +1,195 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-    <title>The open source tools I use on daily basis:</title>
-    <link type="text/css" rel="stylesheet" href="assets/css/github-markdown.css">
-    <link type="text/css" rel="stylesheet" href="assets/css/pilcrow.css">
-    <link type="text/css" rel="stylesheet" href="assets/css/hljs-github.min.css"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" /> -->
+    <!-- <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" /> -->
+
+    <link rel="icon" type="image/png" href="aircraft6.png" sizes="80*80" />
+    <link rel="icon" type="image/png" href="aircraft6.png" sizes="80*80" />
+    <title>Shuai Wang, Ph.D. - Tech</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-105220526-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
   </head>
+
   <body>
-    <article class="markdown-body"><h2 id="the-open-source-tools-i-use-on-daily-basis:"><a class="header-link" href="#the-open-source-tools-i-use-on-daily-basis:"></a>The open source tools I use on daily basis:</h2>
-<ul class="list">
-<li>Manjaro Distro (<a href="https://www.redbubble.com/people/rodebubbel/works/31716594-i-use-arch?p=sticker">I use Arch btw</a>)</li>
-<li>NeoVim (story <a href="https://bit.ly/2MQSAh3">1</a>)</li>
-<li>Spacemacs</li>
-<li>Org-mode</li>
-<li>zsh</li>
-<li>i3wm</li>
-<li>Tmux</li>
-</ul>
-<h2 id="r,-python,-and-julia-programming-tools:"><a class="header-link" href="#r,-python,-and-julia-programming-tools:"></a>R, Python, and Julia programming tools:</h2>
-<p><a href="https://github.com/jalvesaq/Nvim-R">Nvim-R</a> for R and
-<a href="https://github.com/jalvesaq/vimcmdline">vimcmdline</a> for python and julia.
-They are lightweight yet powerful IDE to write and run code inside neovim
-environment.  </p>
-<h2 id="math-modeling-tools:"><a class="header-link" href="#math-modeling-tools:"></a>Math modeling tools:</h2>
-<p><a href="https://github.com/MiniZinc">Minizinc</a> and <a href="https://github.com/JuliaOpt/JuMP.jl">JuMP</a> to model
-optimization problem, and <a href="https://github.com/coin-or/Cbc">COINOR-CBC</a> as
-default open-source solver, <a href="https://www.ibm.com/analytics/cplex-optimizer">Cplex</a> and <a href="https://www.gurobi.com/">Gurobi</a> in commercial/academic setting.</p>
-<h2 id="speak:"><a class="header-link" href="#speak:"></a>Speak:</h2>
-<ol class="list">
-<li><p><a href="https://github.com/shuaiwang88/intro_optimization_CinDay_R_meetup_May_22_2019/blob/master/Gental_Intro_Optimization_R.pdf">A Gentle Introduction to Modern Optimization Tools in R</a>
-at Cincinnati and Dayton R meetup on May 22 2019</p>
-</li>
-<li><p><a href="https://github.com/shuaiwang88/dissertation/blob/master/Seminar_Presentation.pdf">Data Mining and Mathematical Models for Optimal Scholarship Allocation for a State University</a>
-at <a href="https://josephcslater.github.io/josephcslater/classes/speakers/Wang.html">WSU Engineering seminar</a> on Dec 2016.</p>
-</li>
-</ol>
-<h2 id="blog-post:"><a class="header-link" href="#blog-post:"></a>Blog post:</h2>
-<ol class="list">
-<li><a href="https://bit.ly/30Np80u">Construction Speed in Popular Open Source Math Modeling Tools: minizinc vs
-pyomo vs JuMP</a> featured in <a href="https://juliacomputing.com/blog/2019/10/october-newsletter/">Julia Computing newsletter</a>.  </li>
-</ol>
-<h2 id="the-tech-i-like-and-dislike:"><a class="header-link" href="#the-tech-i-like-and-dislike:"></a>The tech I like and dislike:</h2>
-<h3 id="like:"><a class="header-link" href="#like:"></a>Like:</h3>
-<ul class="list">
-<li><p>Julia Language: the only nice-looking language capable in both prototyping and production.</p>
-</li>
-<li><p>Minizinc: I once converted an optimization model in production with <strong>1200</strong> lines written in R to <strong>28</strong> lines in Minizinc.</p>
-</li>
-</ul>
-<h3 id="dislike:"><a class="header-link" href="#dislike:"></a>Dislike:</h3>
-<ul class="list">
-<li><p>Sql: I never like this and my brain will stop working when joining more than 2 tables.</p>
-</li>
-<li><p>Windows: I do own a laptop running Windows 10 at work, and my wallpaper is logo of windows 95.</p>
-</li>
-</ul>
-<h2 id="reading"><a class="header-link" href="#reading"></a>Reading</h2>
-<ol class="list">
-<li><a href="http://www.optimization-online.org/DB_FILE/2017/10/6308.pdf">inmate assignment</a></li>
-</ol>
-    </article>
+    <nav class="navbar navbar-default">
+<div class="container">
+<div class="navbar-header">
+  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span> 
+  </button>
+  <a class="navbar-brand" href="index.html">Shuai Wang</a>
+</div>
+<div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav">
+        
+        
+          <li><a href="index.html">About Me</a></li>
+        
+        
+        
+          <li><a href="research.html">Work</a></li>
+        
+        
+        
+          <li class="active"><a href="tech.html">Tech</a></li>
+        
+        
+        
+          <li><a href="resumes/CV_Shuai_WANG.pdf">CV</a></li>
+        
+        
+    </ul>
+  </div>
+</div>
+</nav>
+
+    <div class="container">
+      <div class="row">
+  <div class="col-md-12">
+    <h1 class="page-header">Technology & Open Source</h1>
+    <p>
+      The open-source tools, programming environments, mathematical modeling frameworks, talks, and blog posts I use and share.
+    </p>
+
+    <div class="panel panel-default">
+      <div class="panel-heading"><strong>Daily Open Source Tools</strong></div>
+      <div class="panel-body">
+        <ul>
+          <li>Manjaro Distro (<a href="https://www.redbubble.com/people/rodebubbel/works/31716594-i-use-arch?p=sticker">I use Arch btw</a>)</li>
+          <li>NeoVim (story <a href="https://bit.ly/2MQSAh3">1</a>)</li>
+          <li>Spacemacs</li>
+          <li>Org-mode</li>
+          <li>zsh</li>
+          <li>i3wm</li>
+          <li>Tmux</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading"><strong>Programming Tools (R, Python, Julia)</strong></div>
+      <div class="panel-body">
+        <p>
+          <a href="https://github.com/jalvesaq/Nvim-R">Nvim-R</a> for R and <a href="https://github.com/jalvesaq/vimcmdline">vimcmdline</a> for Python and Julia.
+          They are lightweight yet powerful IDEs to write and run code inside the NeoVim environment.
+        </p>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading"><strong>Mathematical Modeling Tools</strong></div>
+      <div class="panel-body">
+        <p>
+          <a href="https://github.com/MiniZinc">MiniZinc</a> and <a href="https://github.com/JuliaOpt/JuMP.jl">JuMP</a> to model optimization problems, and <a href="https://github.com/coin-or/Cbc">COINOR-CBC</a> as default open-source solver, with <a href="https://www.ibm.com/analytics/cplex-optimizer">CPLEX</a> and <a href="https://www.gurobi.com/">Gurobi</a> in commercial/academic settings.
+        </p>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading"><strong>Talks & Presentations</strong></div>
+      <div class="panel-body">
+        <ol>
+          <li>
+            <p>
+              <a href="https://github.com/shuaiwang88/intro_optimization_CinDay_R_meetup_May_22_2019/blob/master/Gental_Intro_Optimization_R.pdf">A Gentle Introduction to Modern Optimization Tools in R</a>
+              at Cincinnati and Dayton R meetup on May 22, 2019.
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="https://github.com/shuaiwang88/dissertation/blob/master/Seminar_Presentation.pdf">Data Mining and Mathematical Models for Optimal Scholarship Allocation for a State University</a>
+              at <a href="https://josephcslater.github.io/josephcslater/classes/speakers/Wang.html">WSU Engineering seminar</a> on Dec 2016.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading"><strong>Blog Posts</strong></div>
+      <div class="panel-body">
+        <ol>
+          <li>
+            <a href="https://bit.ly/30Np80u">Construction Speed in Popular Open Source Math Modeling Tools: minizinc vs pyomo vs JuMP</a>
+            featured in <a href="https://juliacomputing.com/blog/2019/10/october-newsletter/">Julia Computing newsletter</a>.
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading"><strong>The Tech I Like and Dislike</strong></div>
+      <div class="panel-body">
+        <h4><strong>Like:</strong></h4>
+        <ul>
+          <li><strong>Julia Language:</strong> The only nice-looking language capable in both prototyping and production.</li>
+          <li><strong>MiniZinc:</strong> I once converted an optimization model in production with <strong>1200</strong> lines written in R to <strong>28</strong> lines in MiniZinc.</li>
+        </ul>
+        <hr>
+        <h4><strong>Dislike:</strong></h4>
+        <ul>
+          <li><strong>SQL:</strong> I never like this and my brain will stop working when joining more than 2 tables.</li>
+          <li><strong>Windows:</strong> I do own a laptop running Windows 10 at work, and my wallpaper is logo of Windows 95.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading"><strong>Reading</strong></div>
+      <div class="panel-body">
+        <ol>
+          <li><a href="http://www.optimization-online.org/DB_FILE/2017/10/6308.pdf">Inmate Assignment</a></li>
+        </ol>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    </div>
+
+    <footer class="container-fluid">
+      <p>Template built with <a href="http://getbootstrap.com">Bootstrap</a> by Shuai Wang.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
 </html>
